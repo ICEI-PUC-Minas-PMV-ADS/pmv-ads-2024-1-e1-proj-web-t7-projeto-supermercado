@@ -1,35 +1,35 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+Nos tempos atuais a busca por praticidade e economia é uma constante busca na vida das pessoas, especialmente quando se trata de fazer compras em supermercados. Nesse sentido, o desenvolvimento de um sistema que facilite o acesso dos consumidores às promoções e produtos disponíveis nas redes de supermercados, se mostra não apenas relevante, mas também necessário.
+Este projeto tem como objetivo principal criar uma plataforma que permita aos supermercados disponibilizarem seus produtos e promoções, enquanto os consumidores podem buscar, comparar preços e encontrar as melhores ofertas, proporcionando-lhes maior poder de compra, economia de tempo e dinheiro. 
+Ao oferecer um fluxo de informações assertivas e acessíveis, visando fortalecer o poder de negociação dos compradores, ao possibilitar que os consumidores tenham maior capacidade de barganha com as empresas do setor, principalmente em relação a preço e qualidade dos produtos.
+Ao compreender as necessidades e expectativas dos usuários, este sistema busca uma forma eficaz e eficiente, de proporcionar uma experiência de compra mais satisfatória e contribuindo para a economia e bem-estar dos consumidores e da sociedade em geral.
+
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
-
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-
+O problema abordado move a dificuldade de consumidores de supermercados encontrarem produtos com menor valor ou de comparar preços, dado que, quando possuem a necessidade de fazer compras, sempre optam pelo local de sua preferência, costume ou simplesmente não têm acesso à informação.
+Busca-se facilitar o acesso, dar informações, oferecer boas opções e economia para a população no geral. Uma vez que, a ausência de informações e opções faz com que as pessoas não tenham acesso as promoções e produtos viáveis na hora de escolher o melhor fornecedor.
+Isso impacta de forma negativa, já que eles precisam visitar vários estabelecimentos para comparar os preços. Além disso, pode resultar em gastos desnecessários e impactar o orçamento familiar, causando frustração e insatisfação entre os consumidores.
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+Oferecer ao consumidor a oportunidade de economizar em suas compras de supermercado, encontrando o melhor preço de um item entre várias opções de supermercados. Beneficiando também os donos de supermercados, permitindo-lhes promover seu estabelecimento através de promoções cadastradas no site.
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+Há uma crescente busca por praticidade ao se fazer compras em supermercado, com isso, a elaboração de um sistema que permite redes de supermercados disponibilizarem produtos e, usuários a buscarem e compararem preços, traz uma sensação de poder de compra por parte do consumidor, possibiitando economias de tempo e dinheiro. A gestão familiar também se torna algo bem relevante quando se trata do assunto, além da transparência varejista e, com um sistema que possibilite isso, a contribuição para a sociedade será bem relevante.
+O objetivo principal é trazer um fluxo de infrormações bem assertivas e que facilite o acesso. Isso é tão importante para o mercado que pode ser traduzido com Freire (2013): 
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+O poder de negociação dos compradores pode ser traduzido como a capacidade de barganha dos clientes para com as empresas do setor. Esta força competitiva está relacionada com o poder de decisão dos compradores sobre os atributos do produto, principalmente quanto a preço e qualidade.
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
+A identificação do público alvo permite conhecer as necessidades dos mesmos que irão nortear o aplicativo. Além dos supermercados, comércios varejistas e comércio local devemos também levar em consideração: 
 
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
+•	consumidores que sempre aguardam ofertas para realizarem suas compras;
+•	famílias que precisam gerenciar seus orçamentos;
+•	consumidores que buscam economia nos seus gastos mensais;
+•	pessoas que buscam a praticidade envolvendo preços e a localização do supermercados.
 
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
 
