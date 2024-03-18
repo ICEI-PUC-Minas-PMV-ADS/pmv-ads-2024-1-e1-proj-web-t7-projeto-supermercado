@@ -7,15 +7,18 @@
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil Cliente </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Consumidor buscando menor preço</td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td>Buscar produtos/supermercados.
+Comparar preços.
+Buscar melhor localização.
+</td>
 </tr>
 </tbody>
 </table>
