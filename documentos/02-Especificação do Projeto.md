@@ -56,7 +56,7 @@ Ver avaliações.
 |--------------------|---------------------------|----------------------------------|
 | Cliente            | desejo ver melhores preços e promoções  | para economizar dinheiro                     |
 | Cliente                | desejo seguir os perfis de supermercados                       | para obter informações de promoções.   
-| Cliente            | desejo poder criar listas de compras personalizadas | para saber em qual supermercado a compra ficará mais barata   
+| Cliente            | desejo poder criar listas de compras | para saber em qual supermercado a compra ficará mais barata   
 | Supermercados            | desejo cadastrar meus produtos e promoções  | para vender mais  
 | Supermercados            | desejo visitar perfis de outros supermercados  | para comparar com meus produtos 
 
