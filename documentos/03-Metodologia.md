@@ -20,7 +20,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 
 ### Processo
 
-o quadro kanban atualizado se encontra no link a seguir -> [kanban](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/assets/91565261/f1bb22c9-45f9-4adb-8087-d6a5d6da9b91)
+o quadro kanban atualizado se encontra no link a seguir -> [kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1000)
 
 <img src="img/kanban.png" alt="quadro kanaban em 11/04">
 
