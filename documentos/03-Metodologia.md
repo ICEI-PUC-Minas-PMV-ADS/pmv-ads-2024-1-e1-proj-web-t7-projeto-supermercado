@@ -18,14 +18,9 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Equipe de Desenvolvimento: Patrick Breno, Tobias Quintão, Isac Alves, Lorrayne santos, Caroline Lourenço, Davi Lucca.
 - Equipe de Design: Isac Alves.
 
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
 ### Processo
 
-o quadro kanban atualizado se encontra no link a seguir ->[kanban](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/assets/91565261/f1bb22c9-45f9-4adb-8087-d6a5d6da9b91)
+o quadro kanban atualizado se encontra no link a seguir -> [kanban](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/assets/91565261/f1bb22c9-45f9-4adb-8087-d6a5d6da9b91)
 
 <img src="img/kanban.png" alt="quadro kanaban em 11/04">
 
