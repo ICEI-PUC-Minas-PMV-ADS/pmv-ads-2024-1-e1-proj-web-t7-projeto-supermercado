@@ -19,6 +19,12 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Equipe de Design: Isac Alves.
 
 ### Processo
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes listas:
+
+-Product Backlog: recebe as tarefas a serem trabalhadas e representa o Backlog do produto. Todas as atividades       identificadas no decorrer do projeto são incorporadas a esta lista.
+-To Do: esta lista representa o Sprint Backlog que está sendo trabalhado.
+-In progress: lista das tarefas iniciadas.
+-Done: nesta lista são colocadas as tarefas finalizadas e as que passaram pelos testes e controle de qualidade, prontas para serem entregues aos usuários.
 
 o quadro kanban atualizado se encontra no link a seguir -> [kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1000)
 
