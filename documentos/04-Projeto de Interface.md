@@ -22,8 +22,9 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 [Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
 
-<h2>pagina inicial<dr>
+<h2>pagina inicial<h2>
 
+<img src="img/tela inicial.png" alt="tela inicial">
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
