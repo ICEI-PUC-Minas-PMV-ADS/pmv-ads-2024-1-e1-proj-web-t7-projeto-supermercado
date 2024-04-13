@@ -6,7 +6,9 @@
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+## O Projeto
+
+<p>o projeto tem como objetivo ajudar as pessoas a encontrar as melhores promoçoes em supermercados próximos a ela,sem que ela precise proucurar em diversas fontes<p>
 
 ## Integrantes
 
