@@ -30,7 +30,7 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 ### Lista de Compras
 
-<p>Nessa tela mostra a lista de produtos favoritadas e o valor economizado pelo cliente.<p>
+<p>Nessa tela mostra a lista de produtos favoritados e o valor economizado pelo cliente.<p>
 
 <img src="img/listaDeCompras.jpeg" alt="lista-de-compras">
 
