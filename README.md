@@ -15,7 +15,7 @@
 * Patrick Breno
 * Tobias Quintão
 * Isac Alves
-* Lorrayne santos
+* Lorrayne Santos
 * Caroline Lourenço
 * Davi Lucas
 
