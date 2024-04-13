@@ -22,7 +22,7 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 [Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
 
-<h2>pagina inicial
+<h2>pagina inicial<dr>
 
 
 > **Links Úteis**:
