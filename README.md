@@ -1,4 +1,4 @@
-# Título do Projeto
+# Smart Spend
 
 `CURSO`
 
@@ -8,7 +8,7 @@
 
 ## O Projeto
 
-<p>o projeto tem como objetivo ajudar as pessoas a encontrar as melhores promoçoes em supermercados próximos a ela,sem que ela precise proucurar em diversas fontes<p>
+<p>O projeto tem como objetivo ajudar as pessoas a encontrar as melhores promoçoes em supermercados próximos a ela,sem que ela precise proucurar em diversas fontes,dando a ela mais tempo e melhores preços para fazer suas compras.<p>
 
 ## Integrantes
 
