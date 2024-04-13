@@ -22,13 +22,11 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 [Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
 
-### pagina inicial
+### Pagina Inicial
 
 <p>na tela inicial,é apresentado as promoçoes nos mercados cadastrados,categorias de produtos,filtros de pesquisa e notificaçoes<p>
 
 <img src="img/tela inicial.png" alt="tela inicial">
-
-
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
