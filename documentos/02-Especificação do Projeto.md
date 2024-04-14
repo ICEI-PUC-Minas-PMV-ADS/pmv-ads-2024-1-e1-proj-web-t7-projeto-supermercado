@@ -81,9 +81,8 @@ RF-08 |A aplicação deve permitir que usuários avaliem e deixem comentários |
 RF-09 | Permitir que o usuário escolha na página inicial entre ver ofertas e cadastrar supermercado | ALTA
 RF-10 | Permitir que donos de supermercados  se cadastrem no aplicativo para promover seus estabelecimentos | ALTA
 RF-11 | Permitir que os donos de supermercados  adicionem, editem e excluam ofertas e promoções | MÉDIA
-
-
-
+RF-12 | Permitir que o usuário filtre sua busca por categoria | MÉDIA
+RF-13 | Permitir que o usuário filtre sua busca por nome de supermercado | MÉDIA
 
 
 **Prioridade: Alta / Média / Baixa. 
