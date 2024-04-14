@@ -34,6 +34,11 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 <img src="img/listaDeCompras.png" alt="lista-de-compras">
 
+### Gestão de ofertas ###
+
+<p>Nessa tela o representante do supermercado gerência seus produtos.<p>
+<img src="img/gestão de ofertas (1).jpg" alt="Gestão de ofertas">
+
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
 >- Ferramentas:
