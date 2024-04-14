@@ -32,7 +32,7 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 <p>Nessa tela mostra a lista de produtos favoritados e o valor economizado pelo cliente.<p>
 
-<img src="img/listaDeCompras.jpeg" alt="lista-de-compras">
+<img src="img/listaDeCompras.png" alt="lista-de-compras">
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
