@@ -5,7 +5,8 @@
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
-[Adicione aqui o diagrama de fluxo de usuário da sua aplicação.] 
+acesse o <a href="https://www.figma.com/file/mMQ6xjD8z8HkEmKKonzp6p/prot%C3%B3tipo-SmartSpend?type=design&mode=design&t=GTBVOqb0ldmRynez-0">Ambiente Figma do Projeto</a>
+
 
 > **Links Úteis**:
 > - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
@@ -33,6 +34,11 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 <p>Nessa tela mostra a lista de produtos favoritados e o valor economizado pelo cliente.<p>
 
 <img src="img/listaDeCompras.png" alt="lista-de-compras">
+
+### Gestão de ofertas ###
+
+<p>Nessa tela o representante do supermercado gerência seus produtos.<p>
+<img src="img/gestão de ofertas (1).jpg" alt="Gestão de ofertas">
 
 > **Links Úteis**:
 > - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
