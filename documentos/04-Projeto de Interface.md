@@ -12,13 +12,13 @@ acesse o <a href="https://www.figma.com/file/mMQ6xjD8z8HkEmKKonzp6p/prot%C3%B3ti
 
 ### Inicio
 
-<p>É aqui que a aplicaçao começa<p>
+<p>Onde o usuário escolhe o perfil em que ele se encaixa<p>
 
 <img src="img/inicio.png" alt="inicio">
 
 ### Pagina Inicial
 
-<p>na tela inicial,é apresentado as promoçoes nos mercados cadastrados,categorias de produtos,filtros de pesquisa e notificaçoes<p>
+<p>na tela inicial,é apresentado as promoçoes nos supermercados cadastrados,categorias de produtos,filtros de pesquisa e notificaçoes<p>
 
 <img src="img/tela inicial.png" alt="tela inicial">
 
@@ -31,7 +31,7 @@ acesse o <a href="https://www.figma.com/file/mMQ6xjD8z8HkEmKKonzp6p/prot%C3%B3ti
 
 ### Tela de login
 
-<p>Nessa tela o usuario cria sua conta,ou faz login,sendo cliente ou dono de mercado</p>
+<p>Nessa tela o usuario cria sua conta,ou faz login,sendo cliente ou dono de supermercado</p>
 
 <img src="img/Tela Login.png" alt="Tela Login">
 
