@@ -33,6 +33,10 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 <img src="img/listaDeCompras.png" alt="lista-de-compras">
 
+### Tela de login
+
+<p>Nessa tela o usuario cria sua conta,ou faz login,sendo cliente ou dono de mercado</p>
+
 
 ### Gestão de ofertas ###
 
