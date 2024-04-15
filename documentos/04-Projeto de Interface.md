@@ -38,6 +38,7 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 <p>Nessa tela o usuario cria sua conta,ou faz login,sendo cliente ou dono de mercado</p>
 
 
+
 ### Gestão de ofertas ###
 
 <p>Nessa tela o representante do supermercado gerência seus produtos.<p>
