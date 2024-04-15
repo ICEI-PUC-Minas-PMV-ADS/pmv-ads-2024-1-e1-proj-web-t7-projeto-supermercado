@@ -21,10 +21,10 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 ### Processo
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes listas:
 
--Product Backlog: recebe as tarefas a serem trabalhadas e representa o Backlog do produto. Todas as atividades identificadas no decorrer do projeto são incorporadas a esta lista.<br>
--To Do: esta lista representa o Sprint Backlog que está sendo trabalhado.<br>
--In progress: lista das tarefas iniciadas.<br>
--Done: nesta lista são colocadas as tarefas finalizadas e as que passaram pelos testes e controle de qualidade, prontas para serem entregues aos usuários.
+- Product Backlog: recebe as tarefas a serem trabalhadas e representa o Backlog do produto. Todas as atividades identificadas no decorrer do projeto são incorporadas a esta lista.<br>
+- To Do: esta lista representa o Sprint Backlog que está sendo trabalhado.<br>
+- In progress: lista das tarefas iniciadas.<br>
+- Done: nesta lista são colocadas as tarefas finalizadas e as que passaram pelos testes e controle de qualidade, prontas para serem entregues aos usuários.
 
 o quadro kanban atualizado se encontra no link a seguir -> [kanban](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1000)
 
@@ -52,9 +52,9 @@ o quadro kanban atualizado se encontra no link a seguir -> [kanban](https://gith
 
 Usamos as seguintes ferramentas para nos auxilar no desenvolvimento do projeto:
 
-ferramenta de comunicaçao entre membros da equipe - WhatsApp.
-ferramenta para desenvolvimento de protótipo - Figma.
-ferramenta para gestao de tarefas - GitHub projects.
+- ferramenta de comunicaçao entre membros da equipe - WhatsApp.
+- ferramenta para desenvolvimento de protótipo - Figma.
+- ferramenta para gestao de tarefas - GitHub projects.
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
