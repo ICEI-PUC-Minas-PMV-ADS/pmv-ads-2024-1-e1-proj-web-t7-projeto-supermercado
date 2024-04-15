@@ -50,3 +50,9 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 <img src="img/notificaçoes.png" alt="notificaçoes">
 
+### Produto
+
+<p>Nessa tela o usuario tem mais informaçoes sobre o produto selecionado<p>
+
+<img src="img/produto.png" alt="produto">
+
