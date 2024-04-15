@@ -110,9 +110,9 @@ RNF-06 | Estrutura modular: O site deve ter uma estrutura modular, permitindo qu
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-RN-01 | Os usuários devem ter a opção de denunciar ofertas fraudulentas ou inadequadas, contribuindo para a manutenção da integridade da plataforma | ALTA
-RN- 02 | Implementar um sistema de classificação de produtos pelos usuários, permitindo que compartilhem suas opiniões e experiências com outros consumidores | MÉDIA
-RN-03 | Oferecer uma seção de perguntas frequentes (FAQ) na  plataforma, respondendo às dúvidas mais comuns dos usuários de forma clara e concisa | ALTA
+RN-01 |permitir que o usuário filtre sua busca por categoria | ALTA
+RN- 02 |permitir que o usuário filtre sua busca por nome de supermercado. | MÉDIA
+RN-03 |Definir data de início e fim das promoções | ALTA
 
 
 **Prioridade: Alta / Média / Baixa.
