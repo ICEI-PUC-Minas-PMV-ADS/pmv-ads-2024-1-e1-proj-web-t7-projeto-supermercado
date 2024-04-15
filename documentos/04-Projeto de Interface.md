@@ -7,11 +7,8 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 acesse o <a href="https://www.figma.com/file/mMQ6xjD8z8HkEmKKonzp6p/prot%C3%B3tipo-SmartSpend?type=design&mode=design&t=GTBVOqb0ldmRynez-0">Ambiente Figma do Projeto</a>
 
+<img src="img/protótipo SmartSpend (2).jpg" alt="protótipo SmartSpend">
 
-> **Links Úteis**:
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools & Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
 
 ## Protótipo
 
@@ -29,11 +26,18 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 <img src="img/tela inicial.png" alt="tela inicial">
 
+
 ### Lista de Compras
 
 <p>Nessa tela mostra a lista de produtos favoritados e o valor economizado pelo cliente.<p>
 
 <img src="img/listaDeCompras.png" alt="lista-de-compras">
+
+### Tela de login
+
+<p>Nessa tela o usuario cria sua conta,ou faz login,sendo cliente ou dono de mercado</p>
+
+<img src="img/Tela Login.png" alt="Tela Login">
 
 ### Gestão de ofertas ###
 
