@@ -110,8 +110,8 @@ RNF-06 | Estrutura modular: O site deve ter uma estrutura modular, permitindo qu
 
 |ID      | Descrição               |Prioridade |
 |--------|-------------------------|----|
-RN-01 |permitir que o usuário filtre sua busca por categoria | ALTA
-RN- 02 |permitir que o usuário filtre sua busca por nome de supermercado. | MÉDIA
+RN-01 | definir limite de itens em promoção por usiário | ALTA
+RN- 02 | compra de itens especificos permitida para maiores de 18 anos. | ALTA
 RN-03 |Definir data de início e fim das promoções | ALTA
 
 
