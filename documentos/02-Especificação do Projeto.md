@@ -70,7 +70,7 @@ Ver avaliações.
 
 |ID    | Descrição                | Prioridade |
 |-------|---------------------------------|----|
-| RF-01 | A aplicação deve permitir o cadastro de usuários e login | ALTA
+| RF-01 | A aplicação deve permitir o cadastro de usuários. | ALTA
 | RF-02 | A aplicação deve permitir ao usuário fazer o login da sua conta | ALTA
 RF-03 | A aplicação deve permitir a busca de produtos | ALTA
 RF-04 |A aplicação deve permitir a comparação de preços |ALTA
