@@ -76,7 +76,7 @@ RF-03 | A aplicação deve permitir a busca de produtos | ALTA
 RF-04 |A aplicação deve permitir a comparação de preços |ALTA
 RF-05 |A aplicação deve permitir que o usuário crie listas de compras | BAIXA
 RF-06 |A aplicação deve permitir a notificação de ofertas | MÉDIA | 
-RF-07 | A aplicação deve permitir a geolocalização utilizando GPS | MÉDIA
+RF-07 | A aplicação deve permitir filtrar sua busca por estabelecimento proximo | MÉDIA
 RF-08 |A aplicação deve permitir que usuários avaliem e deixem comentários | BAIXA
 RF-09 | Permitir que o usuário escolha na página inicial entre ver ofertas e cadastrar supermercado | ALTA
 RF-10 | Permitir que donos de supermercados  se cadastrem no aplicativo para promover seus estabelecimentos | ALTA
