@@ -82,7 +82,7 @@ RF-09 | Permitir que donos de supermercados  se cadastrem no aplicativo para pro
 RF-10 | Permitir que os donos de supermercados adicionem, editem e excluam ofertas e promoções | MÉDIA
 RF-11 | Permitir que o usuário filtre sua busca por categoria | MÉDIA
 RF-12 | Permitir que o usuário filtre sua busca por nome de supermercado | MÉDIA
-
+RF-13 | Permitir que o usuário filtre sua busca por menor preço | MÉDIA
 
 **Prioridade: Alta / Média / Baixa. 
 
