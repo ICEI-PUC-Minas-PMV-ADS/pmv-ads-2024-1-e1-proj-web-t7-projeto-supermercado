@@ -77,12 +77,11 @@ RF-04 |A aplicação deve permitir a comparação de preços |ALTA
 RF-05 |A aplicação deve permitir que o usuário crie listas de compras | BAIXA
 RF-06 |A aplicação deve permitir a notificação de ofertas | MÉDIA | 
 RF-07 | A aplicação deve permitir filtrar sua busca por localização | MÉDIA
-RF-08 |A aplicação deve permitir que usuários avaliem e deixem comentários | BAIXA
-RF-09 | Permitir que o usuário escolha na página inicial entre ver ofertas e cadastrar supermercado | ALTA
-RF-10 | Permitir que donos de supermercados  se cadastrem no aplicativo para promover seus estabelecimentos | ALTA
-RF-11 | Permitir que os donos de supermercados  adicionem, editem e excluam ofertas e promoções | MÉDIA
-RF-12 | Permitir que o usuário filtre sua busca por categoria | MÉDIA
-RF-13 | Permitir que o usuário filtre sua busca por nome de supermercado | MÉDIA
+RF-08 | Permitir que o usuário escolha na página inicial entre ver ofertas e cadastrar supermercado | ALTA
+RF-09 | Permitir que donos de supermercados  se cadastrem no aplicativo para promover seus estabelecimentos | ALTA
+RF-10 | Permitir que os donos de supermercados adicionem, editem e excluam ofertas e promoções | MÉDIA
+RF-11 | Permitir que o usuário filtre sua busca por categoria | MÉDIA
+RF-12 | Permitir que o usuário filtre sua busca por nome de supermercado | MÉDIA
 
 
 **Prioridade: Alta / Média / Baixa. 
