@@ -10,12 +10,28 @@
 </head>
 <body>
     <img id="ret1" src="imgs/quadrado branco.png" alt="quadrado branco">
-    <img id="ret2"src="imgs/quadrado branco.png" alt="quadrado branco">
+
+    <div>
+        <img id="ret2"src="imgs/quadrado branco.png" alt="quadrado branco">
+        <p id="ofertas">Ofertas do dia no mercado:xxxxx</p>
+    </div>
     <img id="amarelo" src="imgs/retangulo amarelo.png" alt="ret am">
     <img id="carrinho" src="imgs/carrinho.png" alt="carrinho">
-    <img id="lupa" src="imgs/lupa.png" alt="lupa">
+    
     <form action="../gestao-fertas/gestao-ofertas.html" method="post">
         <input type="text" placeholder="pesquisar produtos,supermercados..." name="pesquisa" id="produtos">
+        <img id="lupa" src="imgs/lupa.png" alt="lupa">
     </form>
+    <a id="notificaçoes" href="../notificaçoes/notificaçoes.html">Notificaçoes</a>
+    <select name="Filtro" id="filtro">
+        <option value="">Filtros</option>
+        <option value="ofertas">Ofertas</option>
+        <option value="localizaçao">Localizaçao</option>
+        <option value="menor">Menor Preço</option>
+        <option value="maior">Maior Preço</option>
+        <option value="pedidos">Mais Pedidos</option>
+    </select>
+    <a id="lista" href="../lista de compras/listadecompras.html">Lista de compras</a>
+    
 </body>
 </html>
