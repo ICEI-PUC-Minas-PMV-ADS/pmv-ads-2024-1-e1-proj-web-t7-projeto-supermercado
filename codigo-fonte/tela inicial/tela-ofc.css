@@ -1,0 +1,59 @@
+body{
+    background-color: #BCBCBC;
+}
+
+
+#carrinho{
+    position: fixed;
+    transform: scale(0.15,0.15);
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    bottom: 400px;
+    rotate: 45;
+}
+
+#ret1{
+    position: fixed;
+    left: 10px;
+    right: 100px;
+    top: 300px;
+    height: 300px; ;
+    width: 250px;
+}
+
+#ret2{
+    position: fixed;
+    left: 600px;
+    right: 600px;
+    top: 300px;
+    height: 300px; ;
+    width: 600px;
+}
+
+#amarelo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    transform: scaleX(2);    
+}
+
+#produtos{
+    position: fixed;
+    top: 30px;
+    width: 500px;
+    height: 40px;
+    left: 450px;
+    border: 0px;
+    font-size: 15px;
+    color: #7A7A7A;
+}
+
+#lupa{
+    position: fixed;
+    transform: scale(0.3,0.3);
+    right: 450px;
+    bottom: 6250px;
+
+}
