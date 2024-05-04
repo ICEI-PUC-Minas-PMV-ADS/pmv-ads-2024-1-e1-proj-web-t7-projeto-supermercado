@@ -7,10 +7,12 @@ body{
 
 .conteiner{
     display: grid;
-    gap:5vh ;
+    gap:6vh ;
     grid-template-areas: 'header header header'
                          'sidebar content content'
                          'footer footer footer'
+                         'block1 block2 block3'
+                         'block4 block5 block6'
 }
 
 #header{
@@ -28,19 +30,11 @@ body{
     border-radius: 20px;
 }
 
-#sidebar:hover{
-    transform: scale(1.02,1.02);
-}
-
 #content{
     grid-area: content;
     height: 40vh;
     margin-right: 10%;
     border-radius: 20px;
-}
-
-#content:hover{
-    transform: scale(1.02,1.02);
 }
 
 #footer{
@@ -53,6 +47,51 @@ body{
     font-size: 25px;
     color: red;
     top: 70%;
+}
+
+#block1:hover , #block2:hover , #block3:hover,#block4:hover,#block5:hover,#block6:hover,#sidebar:hover,#content:hover{
+    transform: scale(1.02,1.02);
+}
+
+#block1{
+    grid-area: block1;
+    height: 40vh;
+    border-radius: 20px;
+    margin-left: 10%;
+
+}
+
+#block2{
+    grid-area: block2;
+    height: 40vh;
+    border-radius: 20px;
+    
+}
+
+#block3{
+    grid-area: block3;
+    border-radius: 20px;
+    margin-right: 10%;
+}
+
+#block4{
+    grid-area: block4;
+    height: 40vh;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+
+#block5{
+    grid-area: block5;
+    height: 40vh;
+    border-radius: 20px;
+}
+
+#block6{
+    grid-area: block6;
+    height: 40vh;
+    border-radius: 20px;
+    margin-right: 10%;
 }
 
 .conteiner div{
@@ -107,25 +146,24 @@ body{
 }
 
 .categorias{
-    position: absolute;
+    position: relative;
+    left: 10%;
     display: grid;
-    grid-template-columns:10% 10% 10% 10% ;
+    grid-template-columns:15% 15% 15% 15% ;
     grid-template-areas:'garrafa carne pao papel';
-    top: 55%;
-    gap: 4%;
+    bottom: 67vw;
+    gap: 7%;
 }
 
 .categorias img {
-    position: relative;
     display: inline;
-    transform: scale(0.38,0.38);
     background-color: #ECD931;
-    padding: 20px;
+    padding: 10px;
     border-radius: 100%;
 }
 
 .categorias img:hover{
-    transform: scale(0.39,0.39);
+    transform: scale(1.02,1.02);
 }
 #garrafa{
     grid-area: garrafa;
@@ -152,14 +190,14 @@ body{
 }    
 
 .titulos{
-    position: absolute;
+    position: relative;
     display: grid;
-    grid-template-columns: 100% 100% 100% 100%;
+    grid-template-columns:;
     grid-template-areas: 'bebidas açougue padaria higiene';
-    gap: 4%;
-    top: 68%;
-    left: 11%;
-    font-size: 20px;
+    gap: 100%;
+    bottom: 5vh;
+    left: 15%;
+    font-size: 25px;
 }
 
 #bebidas{
