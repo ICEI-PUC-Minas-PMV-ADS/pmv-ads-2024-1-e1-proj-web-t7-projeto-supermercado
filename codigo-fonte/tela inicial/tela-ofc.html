@@ -11,21 +11,45 @@
 </head>
 <body>
 
-    <form action="../gestao-fertas/gestao-ofertas.html">
-    <input type="text" name="busca" placeholder="pesquisar produtos,mercados,..." id="busca"></form>
+    <div class="barradepesquisa">
+        <form action="../gestao-fertas/gestao-ofertas.html">
+        <input type="text" name="busca" placeholder="pesquisar produtos,mercados,..." id="busca"></form>
+        <img id="carrinho" src="imgs/carrinho.png" alt="carrinho de compras">
+    </div>
+
+    <select name="filtro" id="filtro">
+        <option value="">Filtros</option>
+        <option value="Baratos">Mais Baratos</option>
+        <option value="caros">Mais caros</option>
+        <option value="mercados">Melhores Mercados</option>
+    </select>
 
     <div id="link">
         <a id="notificaçoes" href="../notificaçoes/notificaçoes.html">Notificaçoes</a>
-        <a id="listacompras" href="../lista de compras/listadecompras.html">Lista de Comnpras</a>
+        <a id="listacompras" href="../lista de compras/listadecompras.html">Lista de Compras</a>
     </div>
 
     <div class="conteiner" id="template-areas">
           <div id="header"></div>
           <div id="sidebar"></div>
           <div id="content"></div>
-          <div id="footer"></div>
-          
+          <div id="footer"><p>Compre Por Categoria</p></div>
     </div> 
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, eaque ea debitis facere asperiores non harum delectus inventore, fugiat corporis atque culpa nesciunt sed veritatis adipisci animi! Natus, tempora et.</div> 
+
+    <p id="texto">Ofertas Do Dia</p>
+
+    <div class="categorias" id="itens">
+        <img id="garrafa" src="imgs/icone-garrafa.png" alt="garrafa">
+        <img id="carne" src="imgs/icone-carne.png" alt="icone-carne">
+        <img id="pao"  src="imgs/icone-pao.png" alt="icone-pao">
+        <img id="papel" src="imgs/icone-papel.png" alt="icone-papel">
+        <div class="titulos">
+            <p id="bebidas"><strong>Bebidas</strong></p>
+            <p id="açougue"><strong>Açougue</strong></p>
+            <p id="padaria"><strong>Padaria</strong></p>
+            <p id="higiene"><strong>Higiene</strong></p>
+        </div>
+    </div>
+
 </body>
 </html>
