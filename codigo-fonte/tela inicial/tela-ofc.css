@@ -266,7 +266,7 @@ body{
     #block6{width: 40%;margin-right: 0;}
     #footer p{font-size: 17px;top: 111%;}
     .categorias img{transform: scale(0.6,0.6);}
-    .categorias{bottom: 155vh;left:-2vh;gap:7vh;}
+    .categorias{bottom: 160vh;left:-2vh;gap:7vh;}
     .categorias img:hover{transform: scale(0.7,0.7);}
-    .titulos{font-size: 15px;gap: 9vh;left: 70%;bottom: 10vh;}
+    .titulos{font-size: 15px;gap: 9vh;left: 70%;bottom: 12vh;}
 }
