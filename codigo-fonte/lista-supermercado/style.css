@@ -1,0 +1,14 @@
+body {
+    height: 100vh;
+    background-color:white;
+    font-family: "Open Sans";
+    box-sizing: border-box;   
+    color: black;
+
+}
+
+.cabecalho{
+    background-color: #ECD931;
+    padding: 1%;
+    text-align: center;
+}
