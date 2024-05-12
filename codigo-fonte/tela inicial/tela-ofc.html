@@ -10,51 +10,46 @@
     <title>SmartSpend-inicio</title>
 </head>
 <body> 
-    <div class="barradepesquisa">
-        <form action="../gestao-fertas/gestao-ofertas.html">
-        <input type="text" name="busca" placeholder="pesquisar produtos,mercados,..." id="busca"></form>
-        <img id="carrinho" src="imgs/carrinho.png" alt="carrinho de compras">
-    </div>
-
-    <select name="filtro" id="filtro">
-        <option value="">Filtros</option>
-        <option value="Baratos">Mais Baratos</option>
-        <option value="caros">Mais caros</option>
-        <option value="mercados">Melhores Mercados</option>
-    </select>
-
-    <div id="link">
-        <a id="notificaçoes" href="../notificaçoes/notificaçoes.html">Notificaçoes</a>
-        <a id="listacompras" href="../lista de compras/listadecompras.html">Lista de Compras</a>
-    </div>
-
     <div class="conteiner" id="template-areas">
-          <div id="topo"></div>
-          <div id="bloco1"></div>
-          <div id="bloco2"></div>
-          <div id="barra"><p><strong>Compre Por Categoria</strong></p></div>
-          <div id="bloco3"></div>
-          <div id="bloco4"></div>
-          <div id="bloco5"></div>
-          <div id="bloco6"></div>
-          <div id="bloco7"></div>
-          <div id="bloco8"></div>
-    </div> 
+        <div id="topo">
+                <form action="../gestao-fertas/gestao-ofertas.html">
+                <input type="text" name="busca" placeholder="pesquisar produtos,mercados,..." id="busca"></form>
+                <img id="carrinho" src="imgs/carrinho.png" alt="carrinho de compras">
+                <select name="filtro" id="filtro">
+                    <option value="">Filtros</option>
+                    <option value="Baratos">Mais Baratos</option>
+                    <option value="caros">Mais caros</option>
+                    <option value="mercados">Melhores Mercados</option>
+                </select>
+                <a id="notificaçoes" href="../notificaçoes/notificaçoes.html">Notificaçoes</a>
+                <a id="listacompras" href="../lista de compras/listadecompras.html">Lista de Compras</a>
 
-    <p id="texto"><strong>Ofertas do Dia no Mercado:xxxxx</strong></p>
-
-   <div class="categorias" id="itens">
-        <img id="garrafa" src="imgs/icone-garrafa.png" alt="garrafa">
-        <img id="carne" src="imgs/icone-carne.png" alt="icone-carne">
-        <img id="pao"  src="imgs/icone-pao.png" alt="icone-pao">
-        <img id="papel" src="imgs/icone-papel.png" alt="icone-papel">
-        <!--<div class="titulos">
-            <p id="bebidas"><strong>Bebidas</strong></p>
-            <p id="açougue"><strong>Açougue</strong></p>
-            <p id="padaria"><strong>Padaria</strong></p>
-            <p id="higiene"><strong>Higiene</strong></p>
-        </div>-->
-    </div>
+        </div>
+        <div id="bloco1"></div>
+        <p id="Ofertas"><strong>Ofertas do Dia no Mercado:xxxxx</strong></p>
+        <div id="bloco2"></div>
+        <div id="barra">
+            <h1><strong>Compre Por Categoria</strong></h1>
+            <div class="categoria">
+                <img id="garrafa" src="imgs/icone-garrafa.png" alt="garrafa">
+                <img id="carne" src="imgs/icone-carne.png" alt="icone-carne">
+                <img id="pao"  src="imgs/icone-pao.png" alt="icone-pao">
+                <img id="papel" src="imgs/icone-papel.png" alt="icone-papel">
+            </div>
+            <div class="titulos">
+                <p id="bebidas"><strong>Bebidas</strong></p>
+                <p id="açougue"><strong>Açougue</strong></p>
+                <p id="padaria"><strong>Padaria</strong></p>
+                <p id="higiene"><strong>Higiene</strong></p>
+            </div>    
+        </div>
+        <div id="bloco3"></div>
+        <div id="bloco4"></div>
+        <div id="bloco5"></div>
+        <div id="bloco6"></div>
+        <div id="bloco7"></div>
+        <div id="bloco8"></div>
+  </div> 
 
     <footer id="rodape">
         <p>&copy; 2024 - Todos os direitos reservados</p>
