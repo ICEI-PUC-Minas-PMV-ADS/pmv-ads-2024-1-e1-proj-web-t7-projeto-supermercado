@@ -1,9 +1,9 @@
 body {
     height: 100vh;
-    background-color:white;
+    background-color: black;
     font-family: "Open Sans";
     box-sizing: border-box;   
-    color: black;
+    color: white;
 
 }
 
@@ -11,12 +11,34 @@ body {
     background-color: #ECD931;
     padding: 1%;
     text-align: center;
+    color: black;
 }
 
 .conteudo{ 
-    margin: 10% 15%;
+    margin: 10% 27%;
+    border: 2px solid black;
+    border-radius: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: white;
+    color: black;
    
 }
 
+.foto-produto{
+    width: 54.23px;
+    height: 56.206px;
+    margin-right: 10px;
+}
+.lista__produtos{
+    display: grid;
+}
+
+.lista__produtos__itens{ 
+    margin: 15px;
+    border: 3px solid;
+    border-radius: 5px;
+
+}
