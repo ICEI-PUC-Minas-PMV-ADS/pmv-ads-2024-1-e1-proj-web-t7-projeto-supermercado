@@ -4,14 +4,14 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Título da funcionalidade
+### Adicionar itens
 
-[Adicione imagem da funcionalidade/tela]
+(https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/blob/main/documentos/img/gestaoOfertas-adicionar-item.png)
 
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF-10 Permitir que os donos de supermercados adicionem ofertas e promoções
 
 
 #### Artefatos da funcionalidade
