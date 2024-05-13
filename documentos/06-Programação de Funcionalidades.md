@@ -6,7 +6,7 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 ### Adicionar itens
 
-(https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/blob/main/documentos/img/gestaoOfertas-adicionar-item.png)
+![Untitled Diagram-Page-1 drawio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/blob/main/documentos/img/gestaoOfertas-adicionar-item.png)
 
 
 #### Requisito atendido
