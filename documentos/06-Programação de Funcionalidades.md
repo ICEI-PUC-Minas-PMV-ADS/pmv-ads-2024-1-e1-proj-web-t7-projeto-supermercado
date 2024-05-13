@@ -16,7 +16,9 @@ RF-10 Permitir que os donos de supermercados adicionem ofertas e promoções
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+adicionar-itens.html
+adicionar-itens.js
+adicionar-itens.css
 
 
 #### Estrutura de Dados
@@ -26,14 +28,46 @@ RF-10 Permitir que os donos de supermercados adicionem ofertas e promoções
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+no menu direito superior, clique em "adicionar itens"
+escolha uma foto para o item
+preencha os campos corretamente depois clique em "enviar"
 
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Patrick breno
 
 
+### Meus itens
+
+![Untitled Diagram-Page-1 drawio](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/blob/main/documentos/img/gestaoOfertas-meus-itens.png)
+
+
+#### Requisito atendido
+
+RF-10 Permitir que os donos de supermercados adicionem ofertas e promoções
+
+
+#### Artefatos da funcionalidade
+
+meus-itens.html
+meus-itens.js
+meus-itens.css
+
+
+#### Estrutura de Dados
+
+[Caso exista estrutura de dados, adicione aqui]
+
+
+#### Instruções de acesso
+
+no menu direito superior, clique em "meus itens".
+
+
+#### Responsável
+
+Patrick breno
 
 
 > **Links Úteis**:
