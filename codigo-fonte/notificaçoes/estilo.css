@@ -1,0 +1,46 @@
+#tituloPagina {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#box-tituloPagina{
+    background-color: #ECD931;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 26px;
+    text-align: center;
+}
+
+#botaoAtivar {
+    background-color: #ECD931;
+    border: none;
+    height: 60px;
+    width: 350px;
+    border-radius: 8px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#foto-carrinho {
+    width: 250px;
+}
