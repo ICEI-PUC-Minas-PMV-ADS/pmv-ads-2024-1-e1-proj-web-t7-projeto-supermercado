@@ -6,32 +6,56 @@
     <link rel="shortcut icon" href="imgs/carrinho.png" 
     type="image/x-icon">
     <link rel="stylesheet" href="tela-ofc.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SmartSpend-inicio</title>
 </head>
-<body>
-    <img id="ret1" src="imgs/quadrado branco.png" alt="quadrado branco">
+<body> 
 
-    <div>
-        <img id="ret2"src="imgs/quadrado branco.png" alt="quadrado branco">
-        <p id="ofertas">Ofertas do dia no mercado:xxxxx</p>
-    </div>
-    <img id="amarelo" src="imgs/retangulo amarelo.png" alt="ret am">
-    <img id="carrinho" src="imgs/carrinho.png" alt="carrinho">
-    
-    <form action="../gestao-fertas/gestao-ofertas.html" method="post">
-        <input type="text" placeholder="pesquisar produtos,supermercados..." name="pesquisa" id="produtos">
-        <img id="lupa" src="imgs/lupa.png" alt="lupa">
-    </form>
-    <a id="notificaçoes" href="../notificaçoes/notificaçoes.html">Notificaçoes</a>
-    <select name="Filtro" id="filtro">
-        <option value="">Filtros</option>
-        <option value="ofertas">Ofertas</option>
-        <option value="localizaçao">Localizaçao</option>
-        <option value="menor">Menor Preço</option>
-        <option value="maior">Maior Preço</option>
-        <option value="pedidos">Mais Pedidos</option>
-    </select>
-    <a id="lista" href="../lista de compras/listadecompras.html">Lista de compras</a>
+    <div class="conteiner" id="template-areas">
+        <div id="topo">
+                <form action="../gestao-fertas/gestao-ofertas.html">
+                <input type="text" name="busca" placeholder="pesquisar produtos,mercados,..." id="busca"></form>
+                <img id="carrinho" src="imgs/carrinho.png" alt="carrinho de compras">
+                <select name="filtro" id="filtro">
+                    <option value="">Filtros</option>
+                    <option value="Baratos">Mais Baratos</option>
+                    <option value="caros">Mais caros</option>
+                    <option value="mercados">Melhores Mercados</option>
+                </select>
+                <a id="notificaçoes" href="../notificaçoes/notificaçoes.html">Notificaçoes</a>
+                <a id="listacompras" href="../lista-supermercado/index.html">Lista de Compras</a>
+
+        </div>
+        <div id="bloco1"></div>
+        <p id="Ofertas"><strong>Ofertas do Dia no Mercado:xxxxx</strong></p>
+        <div id="bloco2"></div>
+        <div id="barra">
+            <h1><strong>Compre Por Categoria</strong></h1>
+            <div class="categoria">
+                <img id="garrafa" src="imgs/icone-garrafa.png" alt="garrafa">
+                <img id="carne" src="imgs/icone-carne.png" alt="icone-carne">
+                <img id="pao"  src="imgs/icone-pao.png" alt="icone-pao">
+                <img id="papel" src="imgs/icone-papel.png" alt="icone-papel">
+            </div>
+            <div class="titulos">
+                <p id="bebidas"><strong>Bebidas</strong></p>
+                <p id="açougue"><strong>Açougue</strong></p>
+                <p id="padaria"><strong>Padaria</strong></p>
+                <p id="higiene"><strong>Higiene</strong></p>
+            </div>    
+        </div>
+        <div id="bloco3"></div>
+        <div id="bloco4"></div>
+        <div id="bloco5"></div>
+        <div id="bloco6"></div>
+        <div id="bloco7"></div>
+        <div id="bloco8"></div>
+
+  </div> 
+
+    <footer id="rodape">
+        <p>&copy; 2024 - Todos os direitos reservados</p>
+    </footer>
     
 </body>
 </html>
