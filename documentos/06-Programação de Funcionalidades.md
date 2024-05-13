@@ -16,9 +16,9 @@ RF-10 Permitir que os donos de supermercados adicionem ofertas e promoções
 
 #### Artefatos da funcionalidade
 
-adicionar-itens.html
-adicionar-itens.js
-adicionar-itens.css
+adicionar-itens.html,
+adicionar-itens.js,
+adicionar-itens.css,
 
 
 #### Estrutura de Dados
@@ -28,8 +28,8 @@ adicionar-itens.css
 
 #### Instruções de acesso
 
-no menu direito superior, clique em "adicionar itens"
-escolha uma foto para o item
+no menu direito superior, clique em "adicionar itens",
+escolha uma foto para o item,
 preencha os campos corretamente depois clique em "enviar"
 
 
@@ -50,9 +50,9 @@ RF-10 Permitir que os donos de supermercados adicionem ofertas e promoções
 
 #### Artefatos da funcionalidade
 
-meus-itens.html
-meus-itens.js
-meus-itens.css
+meus-itens.html,
+meus-itens.js,
+meus-itens.css,
 
 
 #### Estrutura de Dados
