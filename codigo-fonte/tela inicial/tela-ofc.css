@@ -206,12 +206,20 @@ body{
     display: inline;
     color: black;
     font-size: 20px;
-    top: 14%;
+    top: 11%;
     left: 15%;
     border: 0px;
     background-color: #ECD931;
     text-decoration: underline;
     width: 100px;
+}
+
+#ItensFiltro{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-color: #d4d4d4;
+
 }
 
 #garrafa{

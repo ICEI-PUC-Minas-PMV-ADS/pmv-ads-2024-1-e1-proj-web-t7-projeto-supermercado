@@ -7,6 +7,7 @@
     type="image/x-icon">
     <link rel="stylesheet" href="tela-ofc.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script defer src="tela-ofc.js"></script>
     <title>SmartSpend-inicio</title>
 </head>
 <body> 
@@ -16,14 +17,17 @@
                 <form action="../gestao-fertas/gestao-ofertas.html">
                 <input type="text" name="busca" placeholder="pesquisar produtos,mercados,..." id="busca"></form>
                 <img id="carrinho" src="imgs/carrinho.png" alt="carrinho de compras">
-                <select name="filtro" id="filtro">
-                    <option value="">Filtros</option>
-                    <option value="Baratos">Mais Baratos</option>
-                    <option value="caros">Mais caros</option>
-                    <option value="mercados">Melhores Mercados</option>
-                </select>
-                <a id="notificaçoes" href="../notificaçoes/notificaçoes.html">Notificaçoes</a>
-                <a id="listacompras" href="../lista-supermercado/index.html">Lista de Compras</a>
+                <p id="filtro"><strong>Filtros</strong></p>
+                <p>
+                    <ul id="ItensFiltro">
+                        <li>Mais Vendidos</li>
+                        <li>Mais Baratos</li>
+                        <li>Mais Caros</li>
+                        <li>Melhores Mercados</li>
+                    </ul>
+                </p>
+                <a id="notificaçoes" href="../notificaçoes/notificaçoes.html"><strong>Notificaçoes</strong></a>
+                <a id="listacompras" href="../lista-supermercado/index.html"><strong>Lista de Compras</strong></a>
 
         </div>
         <div id="bloco1"></div>
