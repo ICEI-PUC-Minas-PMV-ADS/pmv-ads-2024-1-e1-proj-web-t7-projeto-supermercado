@@ -1,0 +1,137 @@
+body{
+    background-color: #e4dbdb;
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.conteiner{
+    display: flex;
+    flex-flow: row;
+    display: grid;
+    gap: 5vh 3% ;
+    grid-template-columns: 70% 27%;
+    grid-template-areas: 'header header'
+                         'main section'
+                         'main aside'
+                         'footer footer'
+}
+
+#header{
+    height: 18vh;
+    background-color: #ECD931;
+    grid-area: header;
+}
+
+#main{
+    background-color: #ffffff;
+    grid-area: main;
+    height: 100%;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+#section{
+    background-color: transparent;
+    margin-right: 10%;
+    border-radius: 10px;
+    height: 15vh;
+    grid-area: section;
+
+}
+
+#section button{
+    top: 23%;  
+    margin-right: 2% ;
+    height: 20vh; 
+    border-radius: 10px;
+    border-color: #ECD931;
+    background-color: #ECD931;
+    font-size: 30px;
+}
+
+
+#aside{
+    background-color: #ffffff;
+    margin-top: 5vh;
+    margin-right: 2%;
+    height: 50vh;
+    border-radius: 10px;
+    grid-area: aside;
+}
+
+#aside p{
+    position: absolute;
+    top: 46%;
+    right: 12%;
+    font-size: 19px;
+}
+
+#footer{
+    background-color: #ECD931;
+    height: 15vh;
+    grid-area: footer;
+}
+
+#busca{
+    border: 0px;
+    position: absolute;
+    left: 30%;
+    bottom: 90%;
+    width: 60vh;
+    height: 5vh;
+}
+
+#carrinho{
+    position: absolute;
+    left: 24%;
+    transform: rotate(-20deg);
+    top: 2%;
+}
+
+header a{
+    color: black;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#notificacoes{
+    position: absolute;
+    right: 15%;
+    top: 14%;
+}
+
+#listacompras{
+    position: absolute;
+    right: 45%;
+    top: 14%;
+}
+
+#filtro{
+    position: absolute;
+    background-color: #ECD931;
+    border: 0px;
+    font-size: 20px;
+    top: 14%;
+    left: 15%;
+}
+
+@media screen and (max-width: 900px) {
+    .conteiner{gap: 2vh;display: grid;grid-template-areas: 'header header'
+                                                            'main main'
+                                                            'section section'
+                                                            'aside aside'
+                                                            'footer footer'}
+    #busca{width: 40vh;}
+    #carrinho{left: 12%;}
+    #filtro{left:5%;width:17%;}    
+    #listacompras{left: 32%;width: 40%;float: center;}
+    #notificacoes{right: 5%;}
+    #header{grid-area: header;}
+    #main{grid-area: main;margin: 2%;height: 60vh;}
+    #section{grid-area: section;margin: 0 auto;}
+    #aside{grid-area: aside;margin-left: 2%}
+    #aside p{position: absolute;left: 4%;top: 105%;}
+    #footer{grid-area: footer;}
+
+}
