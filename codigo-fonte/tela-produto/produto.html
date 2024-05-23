@@ -11,6 +11,7 @@
 <body>
     <div class="conteiner">
         <header id="header">
+            <input id="v" type="text">
             <input type="text" name="barrapesquisa" placeholder="pesquisar produtos,mercados,..." id="busca">
             <img src="imgs/carrinho.png" alt="carrinho mercado" id="carrinho">
             <a href="" id="filtro"><strong>Filtro</strong></a>
@@ -19,10 +20,11 @@
         </header>
         <main id="main"></main>
         <section id="section">
-            <button id="botao">Adicionar a lista de compras</button>
+            <button onclick="addItem()" id="botao" value="false" >Adicionar a lista de compras</button>
         </section>
         <aside id="aside">
-            <p><strong>Produtos semelhantes</strong></p></aside>
+            <p><strong>Produtos semelhantes</strong></p>
+        </aside>
         <footer id="footer">&copy todos os direitos reservados 2024</footer>
 
     </div>
