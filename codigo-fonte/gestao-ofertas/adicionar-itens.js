@@ -20,5 +20,6 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     itens.push(item);
     localStorage.setItem('itens', JSON.stringify(itens));
 
-    // Redirecionar para a página "meus-itens.html" após o envio do formulário
+     // Limpar o formulário
+     document.getElementById('itemForm').reset();
 });
