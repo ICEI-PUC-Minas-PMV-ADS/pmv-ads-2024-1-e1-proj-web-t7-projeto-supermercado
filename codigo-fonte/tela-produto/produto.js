@@ -20,5 +20,3 @@ if(botao === true){
     botao.style.backgroundColor = '#4bdf2e';
     botao.innerHTML = 'Item adicionado a lista de compras';
 }
-
-
