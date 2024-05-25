@@ -23,6 +23,11 @@ body{
     grid-area: header;
 }
 
+#btvoltar{
+    position: absolute;
+    transform:rotate(90deg);
+}
+
 #main{
     background-color: #ffffff;
     grid-area: main;
