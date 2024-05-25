@@ -1,12 +1,66 @@
 body, html{
    height: 100%;
    display: flex;
-   font-family:Inter
+   font-family:Inter;
+   margin:0px
  }
  p{
-   font-weight:600
+   position: absolute;
+   font-weight:600;
  }
- h1{
+
+#acessarConta{
+   top: 15%;   
+ }
+
+#email{
+   top: 20%;
+}
+
+#inputEmail{
+   position: absolute;
+   top: 25%;
+}
+
+#senha{
+   top: 30%;
+}
+
+#inputSenha{
+   position: absolute;
+   top: 35%;
+}
+
+#tpUsuario{
+   position: absolute;
+   top: 45%;
+}
+
+#cxcliente{
+   position: absolute;
+   top: 54.3%;
+   left: 41.5%;
+}
+
+#txCliente{
+   top: 52%;
+   left:43%;
+}
+
+#cxmercado{
+   position: absolute;
+   top: 54.3%;
+   right:50%;
+}
+
+#txMercado{
+   top: 52%;
+   right:45%;
+}
+
+h1{
+   position: absolute;
+   top: 5%;
    font-size: 40px;
    font-weight:900
  }
@@ -30,7 +84,6 @@ img {
    width: 650px;
    height: 100%;
    background: #EEC534;
-
 }
 button{
    margin-right: 15px;
@@ -43,8 +96,11 @@ button{
 
 }
 .buttons{
+   position:relative;
    display: flex;
+   top: 9vh;
 }
+
 input{
    border: none;
    padding: 15px 40px; 
@@ -54,6 +110,9 @@ input{
    min-height: 15px;
 }
 label {
+   position: absolute;
+   top: 42%;
+   right: 42%;
    font-size: 12px;
 }
 

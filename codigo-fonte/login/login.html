@@ -18,20 +18,28 @@
     <div class="mid">
         <div class="conteudo">
             <h1>BEM VINDO</h1>
-            <p>ACESSE SUA CONTA AGORA</p>
-            <p>E-mail/CNPJ</p>
-            <input class="campos" type="text">
-            <p>Senha</p>
-            <input class="campos" type="password">
+            <p id="acessarConta">ACESSE SUA CONTA AGORA</p>
+            <p id="email">E-mail</p>
+            <input id="inputEmail" class="campos" type="text">
+            <p id="senha">Senha</p>
+            <input id="inputSenha" class="campos" type="password">
             <br>
-            <label for="marca_email">
-                <input type="checkbox" name="contato" value="email" id="marca_email" class="input-padrao">
+            <label for="marca_email">   
                 ESQUECI A SENHA
-                </label>
+            </label>
             <br>
+            <p id="tpUsuario">Selecione seu tipo de usuario</p><br>
+            <div class="usCliente">
+                <input type="checkbox" name="cliente" id="cxcliente">
+                <p id="txCliente">Cliente</p>
+            </div>      
+            <div class="usMercado">
+                <input type="checkbox" name="mercado" id="cxmercado">
+                <p id="txMercado">Mercado</p>
+            </div>
             <div class="buttons">
-                <button>ACESSAR</button>
-                <button>CADASTRAR</button>
+            <button id="btAcesso">ACESSAR</button>
+            <button id="btcadastro">CADASTRAR</button>
             </div>
         </div>
     </div>
