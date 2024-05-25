@@ -1,0 +1,61 @@
+body {
+    
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/* cabeçalho inicio*/
+
+header {
+    grid-area: header;
+    background-color: #ECD931;
+    height: 130px;
+
+}
+
+.slogan-cabecalho {
+    display: flex;
+    font-family:'Poetsen One';
+    font-size: 25px;
+    justify-content: center;
+}
+
+.slogan-cabecalho p {
+    margin-top: 45px;
+}
+
+.img-desconto {
+    margin-top: 25px; 
+}
+
+.barra-navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+li {
+    display: inline-block;
+}
+
+ul {
+    margin: 0px;
+}
+.barra-navegacao a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    border-left: 1px solid #000;
+    padding: 0px 15px;
+}
+/*cabeçalho fim*/ 
+section {
+    margin:10px 20px;
+    width: 746px;
+}
+
+section {
+    margin:10px 20px;
+    width: 746px;
+}

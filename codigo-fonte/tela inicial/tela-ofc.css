@@ -1,7 +1,7 @@
 body{
-    background-color: #b9b8b8;
-    margin: 0%;
+    background-color: #e4dbdb;
     padding: 0%;
+    margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -11,11 +11,12 @@ body{
     flex-flow: row ;
     flex-wrap: wrap;
     gap:6vh ;
-    grid-template-areas: 'header header header'
-                         'sidebar content content'
-                         'footer footer footer'
-                         'block1 block2 block3'
-                         'block4 block5 block6'
+    grid-template-areas: 'topo topo topo'
+                         'bloco1 bloco2 bloco2'
+                         'barra barra barra'
+                         'bloco3 bloco4 bloco5'
+                         'bloco6 bloco7 bloco8'
+                         'rodape rodape rodape'
 }
 
 .conteiner div{
@@ -24,18 +25,25 @@ body{
     padding: 10px;
 }
 
-#header{
+.conteiner #Ofertas{
+    position: absolute;
+    color: red;
+    top: 18%;
+    margin-left:37%;
+}
+
+#topo{
     background-color: #ECD931;
-    grid-area: header;
+    grid-area: topo;
     height: 15vh;
     border: 0px;
     width: 100%;
 
 }
 
-#sidebar{
+#bloco1{
     display: inline;
-    grid-area: sidebar;
+    grid-area: bloco1;
     height: 40vh;
     margin-left: 10%;
     float: left;
@@ -43,9 +51,9 @@ body{
     width: 20%;
 }
 
-#content{
+#bloco2{
     display: inline;
-    grid-area: content;
+    grid-area: bloco2;
     height: 40vh;
     margin-right: 10%;
     float: right;
@@ -53,25 +61,55 @@ body{
     width: 50%;
 }
 
-#footer{
-    grid-area: footer;
-    height: 40vh;
+#barra{
+    grid-area: barra;
     width: 100%;
+    height: 30vh;
 }
 
-#footer p{
+#barra .categoria {
+    display: grid;
+    display: flex;
+    flex-flow:row ;
+    flex-wrap: wrap;
+    grid-template-areas: 'garrafa carne pao papel';
+    gap: 13%;
+    margin-left: 10%;
+}
+
+#barra .categoria :hover{
+    transform: scale(1.05,1.05);
+}
+
+#barra .titulos{
     position: absolute;
-    font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    display: grid;
+    grid-template-areas: 'bebidas açougue padaria higiene';
+    column-gap: 5%;
+    font-size: 20px;
+    width:70%;
+    height: 0px;
+    background-color: transparent;
+    left: 12%;
+    top: 93%;
+}
+
+#barra h1{
+    position: absolute;
+    font-size: 20px;
     color: red;
-    top: 70%;
+    top: 66%;
 }
 
-#block1:hover , #block2:hover , #block3:hover,#block4:hover,#block5:hover,#block6:hover,#sidebar:hover,#content:hover{
+#bloco1:hover,#bloco2:hover,#bloco3:hover , #bloco4:hover , #bloco5:hover,#bloco6:hover,#bloco7:hover,#bloco8:hover{
     transform: scale(1.02,1.02);
+    border: 1px solid #ECD931;
 }
 
-
-#block1{
+#bloco3{
     display: inline;
     grid-area: block1;
     height: 40vh;
@@ -82,7 +120,7 @@ body{
 
 }
 
-#block2{
+#bloco4{
     display: inline;
     grid-area: block2;
     height: 40vh;
@@ -92,7 +130,7 @@ body{
 
 }
 
-#block3{
+#bloco5{
     display: inline;
     grid-area: block3;
     height: 40vh;
@@ -102,7 +140,7 @@ body{
     width: 20%;
 }
 
-#block4{
+#bloco6{
     display: inline;
     grid-area: block4;
     height: 40vh;
@@ -112,7 +150,7 @@ body{
     width: 20%;
 }
 
-#block5{
+#bloco7{
     display: inline;
     grid-area: block5;
     height: 40vh;
@@ -121,7 +159,7 @@ body{
     width: 20%;
 }
 
-#block6{
+#bloco8{
     display: inline;
     grid-area: block6;
     height: 40vh;
@@ -173,100 +211,94 @@ body{
     border: 0px;
     background-color: #ECD931;
     text-decoration: underline;
+    width: 100px;
 }
 
-.categorias{
-    position: relative;
-    left: 10%;
-    display: grid;
-    grid-template-columns:15% 15% 15% 15% ;
-    grid-template-areas:'garrafa carne pao papel';
-    bottom: 67vw;
-    gap: 7%;
-    width: 100%;
-}
+#ItensFiltro{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    background-color: #d4d4d4;
 
-.categorias img {
-    display: inline;
-    background-color: #ECD931;
-    padding: 10px;
-    border-radius: 100%;
-}
-
-.categorias img:hover{
-    transform: scale(1.02,1.02);
 }
 
 #garrafa{
     grid-area: garrafa;
+    border-radius: 50%;
+    background-color: #ECD931;
+    padding: 10px;
 }
 
 #carne{
     grid-area: carne;
+    border-radius: 50%;
+    background-color: #ECD931;
+    padding: 10px;
 }
 
 #pao{
     grid-area: pao;
+    border-radius: 50%;
+    background-color: #ECD931;
+    padding: 10px;
 }
 
 #papel{
     grid-area: papel;
-}
-
-#texto{
-    position: absolute;
-    color: red;
-    font-size: 20px;
-    top: 16%;
-    left: 37%;
-}    
-
-.titulos{
-    position: relative;
-    display: grid;
-    grid-template-areas: 'bebidas açougue padaria higiene';
-    gap: 100%;
-    bottom: 5vh;
-    left: 15%;
-    font-size: 25px;
+    border-radius: 50%;
+    background-color: #ECD931;
+    padding: 10px;
 }
 
 #bebidas{
     grid-area: bebidas;
+    margin-left: 5%;
 }
 
 #açougue{
     grid-area: açougue;
+    margin-left: 30%;
 }
 
 #padaria{
     grid-area: padaria;
+    margin-left: 55%;
 }
 
 #higiene{
-    grid-area:higiene ;
+    grid-area: higiene;
+    margin-left: 85%;
 }
 
-@media screen and (max-width: 600px) {
+#rodape{
+    position: relative;
+    background-color: #ECD931;
+    border: 0px;
+    height: 30vh;
+}
+
+@media screen and (max-width: 900px) {
     .conteiner{gap: 1vh;}
+    .conteiner #Ofertas{top: 60%;margin-left: 20%;}
     #busca{width: 40vh;}
     #carrinho{left: 12%;}
     #filtro{left:5%;width:17%;}    
-    #listacompras{left: 32%;width: 40%;}
+    #listacompras{left: 32%;width: 40%;float: center;}
     #notificaçoes{right: 5%;}
-    #sidebar{width: 60%;margin: 0 auto;}
-    #content{width: 90%;margin: 5% auto;}
-    #texto{font-size:17px;top:60% ;left: 20%;}
-    #footer{width: 100%;height: 25vh;}
-    #block1{ width: 40%;margin-left: 5%;}
-    #block2{width: 40%;}
-    #block3{ width: 40%;margin-left: 5%;margin-right: 0;}
-    #block4{width: 40%;margin-left: 0;}
-    #block5{ width: 40%;margin-left: 5%;margin-right: 0;}
-    #block6{width: 40%;margin-right: 0;}
-    #footer p{font-size: 17px;top: 111%;}
-    .categorias img{transform: scale(0.6,0.6);}
-    .categorias{bottom: 160vh;left:-2vh;gap:7vh;}
-    .categorias img:hover{transform: scale(0.7,0.7);}
-    .titulos{font-size: 15px;gap: 9vh;left: 70%;bottom: 12vh;}
+    #bloco1{width: 60%;margin: 0 auto;}
+    #bloco2{width: 90%;margin: 5% auto;}
+    #barra{width: 100%;height: 40vh;}
+    #bloco3{ width: 40%;margin-left:5%;}
+    #bloco4{width: 40%;}
+    #bloco5{ width: 40%;margin-left: 5%;margin-right: 0;}
+    #bloco6{width: 40%;margin-left: 0;}
+    #bloco7{ width: 40%;margin-left: 5%;margin-right: 0;}
+    #bloco8{width: 40%;margin-right: 0;}
+    #footer p{font-size: 17px;top: 110%;}
+    #barra{height:50vh;}
+    #barra h1{top: 107%;margin-left: 25%;}
+    #barra .categoria img{transform: scale(0.7,0.7);}
+    #barra .categoria{margin-left: 10%;border: 0%;row-gap: 2px;position: absolute;top: 115%;margin-top: 0%;}
+    #barra .categoria img:hover{transform: scale(0.75,0.75);}
+    #barra .titulos{display: none;}
 }

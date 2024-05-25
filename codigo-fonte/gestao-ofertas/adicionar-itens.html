@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-UA-compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="adicionar-itens.css">
+        <title>Adicionar itens</title>
+    </head>
+    <body>
+            <header>
+
+                <div class="slogan-cabecalho">
+                    <img src="imagens/carrinho.png" alt="carrinho compras" width="75px">
+                    <p>smartspend</p>
+                    <img class="img-desconto" src="imagens/desconto.png" alt="desconto" width="35px" height="35">
+                </div>
+
+                <nav class="barra-navegacao">
+                    <ul>
+                        <li><a href="adicionar-itens.html">Adicionar itens</a></li>
+                        <li><a href="meus-itens.html">Meus itens</a></li>
+                        <li><a href="minhas-promocoes.html">Promoções</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section>
+
+                <form id="itemForm">
+                    
+                    <div class="upload-imagem formulario">
+                        <label for="foto">Foto do produto:</label><br>
+                        <input type="file" id="foto" accept="img/*" required>
+                    </div>
+        
+                    <div class="nome-item formulario">
+                        <label for="nome">Nome do produto:</label>
+                        <br>
+                        <input type="text" id="nome" required>
+                    </div>
+
+                    <div class="marca formulario"> 
+                        <label for="marca">Marca:</label>
+                        <br>
+                        <input type="text" id="marca" required><br>
+                    </div>
+        
+                    <div class="categoria formulario">
+                        <label for="categoria">Categoria</label>
+                        <br>
+                        <input type="text" id="categoria" required>
+                    </div>
+
+                    <div class="preco formulario">
+                        <label for="preco">Preço R$:</label>
+                        <br>
+                        <input type="number" id="preco" step="0.01" required>
+                    </div>
+
+                    <div class="form-flex">
+                        <div class="maior-idade formulario">
+                            <label for="">Restrito a maiores de 18 anos?</label>
+                            <br>
+                            <input type="radio" name="maior-idade" id="maior-idade">
+                            <label for="maior-idade">Sim</label>
+                            <input type="radio" name="maior-idade" id="maior-idade">
+                            <label for="maior-idade">Não</label>
+                        </div>
+
+                        <div class="promocao formulario">
+                            <label for="">Este item está em promoção?</label>
+                            <br>
+                            <input type="radio" name="promocao" id="promocao">
+                            <label for="promocao">Sim</label>
+                            <input type="radio" name="promocao" id="promocao">
+                            <label for="promocao">Não</label>
+                        </div>
+
+                        
+                        <div class="limite-opcao formulario">
+                            <label for="">Limite de itens por cliente</label>
+                            <br>
+                            <input type="radio" name="limite-itens" id="limite-itens">
+                            <label for="maior-idade">Sim</label>
+                            <input type="radio" name="limite-itens" id="limite-itens">
+                            <label for="maior-idade">Não</label>
+                        </div>
+
+                        <div class="qtd-permitida formulario">
+                            <label for="categoria">Limite de itens por cliente</label>
+                            <br>
+                            <input type="number" id="limite-item" name="limite-item">
+                        </div>
+
+                        <div class="enviar">
+                            <button type="submit">enviar</button> 
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <script src="adicionar-itens.js"></script>
+    </body>
+</html>
