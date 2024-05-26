@@ -23,3 +23,6 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
      // Limpar o formulário
      document.getElementById('itemForm').reset();
 });
+
+
+
