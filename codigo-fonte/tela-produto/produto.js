@@ -15,8 +15,3 @@ function addItem(){
     localStorage.listadecompras = JSON.stringify(list);
     botao.value = "true";
 }
-
-if(botao === true){
-    botao.style.backgroundColor = '#4bdf2e';
-    botao.innerHTML = 'Item adicionado a lista de compras';
-}
