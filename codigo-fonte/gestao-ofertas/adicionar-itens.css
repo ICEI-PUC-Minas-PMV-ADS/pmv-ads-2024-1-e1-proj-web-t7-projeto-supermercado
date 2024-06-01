@@ -108,6 +108,22 @@ form {
         border-radius: 10px;
     }
 
+    .qtd-permitida {
+        display: none;
+    }
+
+    .validadePromo {
+        display: none;
+    }
+    .validadePromo input {
+        margin-bottom: 10px;
+    }
+
+    .validadePromo label {
+        display: block;
+    
+    }
+
     input{
         border-radius: 3px;
         border: 1px solid #000;

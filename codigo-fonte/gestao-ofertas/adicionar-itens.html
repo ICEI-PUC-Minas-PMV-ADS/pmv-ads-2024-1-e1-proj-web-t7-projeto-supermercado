@@ -61,39 +61,35 @@
                         <input type="number" id="preco" step="0.01" required>
                     </div>
 
-                    <div class="form-flex">
+                   <div class="form-flex">
+
                         <div class="maior-idade formulario">
+                            <input type="checkbox" id="maiorIdadeSim" name="maiorIdade" value="sim">
                             <label for="">Restrito a maiores de 18 anos?</label>
-                            <br>
-                            <input type="radio" name="maior-idade" id="maior-idade">
-                            <label for="maior-idade">Sim</label>
-                            <input type="radio" name="maior-idade" id="maior-idade">
-                            <label for="maior-idade">Não</label>
                         </div>
-
-                        <div class="promocao formulario">
-                            <label for="">Este item está em promoção?</label>
-                            <br>
-                            <input type="radio" name="promocao" id="promocao">
-                            <label for="promocao">Sim</label>
-                            <input type="radio" name="promocao" id="promocao">
-                            <label for="promocao">Não</label>
-                        </div>
-
                         
                         <div class="limite-opcao formulario">
-                            <label for="">Limite de itens por cliente</label>
-                            <br>
-                            <input type="radio" name="limite-itens" id="limite-itens">
-                            <label for="maior-idade">Sim</label>
-                            <input type="radio" name="limite-itens" id="limite-itens">
-                            <label for="maior-idade">Não</label>
+                            <input type="checkbox" name="limite-itens" id="limiteItensSim" value="sim">
+                            <label for="">Limite de itens por cliente?</label>
                         </div>
 
                         <div class="qtd-permitida formulario">
                             <label for="categoria">Limite de itens por cliente</label>
                             <br>
-                            <input type="number" id="limite-item" name="limite-item">
+                            <input type="number" id="campo-limite-item" name="campo-limite-item">
+                        </div>
+
+                        <div class="promocao formulario">
+                            <input type="checkbox" name="itemPromocao " id="itemPromocao">
+                            <label for="">Este item está em promoção?</label>
+                        </div>
+
+                        <div class="validadePromo formulario">
+                            <label for="startDate">Início da promoção:</label>
+                            <input type="date" id="inicioPromo" name="inicioPromo">
+                            
+                            <label for="endDate">Fim da promoção:</label>
+                            <input type="date" id="fimPromo" name="fimPromo">
                         </div>
 
                         <div class="enviar">
