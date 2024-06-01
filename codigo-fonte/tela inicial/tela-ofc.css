@@ -2,7 +2,7 @@ body{
     background-color: #e4dbdb;
     padding: 0%;
     margin: 0%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: normal 15pt sans-serif;
 }
 
 .conteiner{
@@ -51,14 +51,27 @@ body{
     width: 20%;
 }
 
+#bloco1 div{
+    margin-left: 20%;
+    text-align: center;
+    justify-items: center;
+}
+
 #bloco2{
     display: inline;
+    display: flex;
     grid-area: bloco2;
     height: 40vh;
     margin-right: 10%;
     float: right;
     border-radius: 20px;
     width: 50%;
+}
+
+#bloco2 div{
+    margin-left: 20%;
+    text-align: center;
+    justify-items: center;
 }
 
 #barra{
@@ -120,6 +133,12 @@ body{
 
 }
 
+#bloco3 div{
+    margin-left: 20%;
+    text-align: center;
+    justify-items: center;
+}
+
 #bloco4{
     display: inline;
     grid-area: block2;
@@ -128,6 +147,12 @@ body{
     border-radius: 20px;
     width: 20%;
 
+}
+
+#bloco4 div{
+    margin-left: 20%;
+    text-align: center;
+    justify-items: center;
 }
 
 #bloco5{
@@ -140,6 +165,12 @@ body{
     width: 20%;
 }
 
+#bloco5 div{
+    margin-left: 20%;
+    text-align: center;
+    justify-items: center;
+}
+
 #bloco6{
     display: inline;
     grid-area: block4;
@@ -148,6 +179,12 @@ body{
     float: left;
     border-radius: 20px;
     width: 20%;
+}
+
+#bloco6 div{
+    margin-left: 20%;
+    text-align: center;
+    justify-items: center;
 }
 
 #bloco7{
@@ -159,6 +196,12 @@ body{
     width: 20%;
 }
 
+#bloco7 div{
+    margin-left: 20%;
+    text-align: center;
+    justify-items: center;
+}
+
 #bloco8{
     display: inline;
     grid-area: block6;
@@ -167,6 +210,12 @@ body{
     margin-right: 10%;
     border-radius: 20px;
     width: 20%;
+}
+
+#bloco8 div{
+    margin-left: 20%;
+    text-align: center;
+    justify-items: center;
 }
 
 #busca{
