@@ -23,9 +23,9 @@ body{
     grid-area: header;
 }
 
-#btvoltar{
+#btVoltar{
     position: absolute;
-    transform:rotate(90deg);
+    transform: scale(0.5,0.5);
 }
 
 #main{
