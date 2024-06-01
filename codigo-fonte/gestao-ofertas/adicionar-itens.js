@@ -8,6 +8,7 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     const categoria = document.getElementById('categoria').value;
 
     const item = {
+        
         foto: foto,
         nome: nome,
         marca: marca,

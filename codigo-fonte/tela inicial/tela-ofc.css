@@ -326,6 +326,8 @@ body{
     height: 30vh;
 }
 
+
+
 @media screen and (max-width: 900px) {
     .conteiner{gap: 1vh;}
     .conteiner #Ofertas{top: 60%;margin-left: 20%;}

@@ -1,17 +1,14 @@
-var list = [];
-var botao = document.querySelector('#botao');
+var list = JSON.parse(localStorage.getItem('lista de compras')) || [];
 
-function addItem(){
-    if(localStorage.listadecompras){
-        list = JSON.parse(localStorage.getItem('listadecompras'));
+
+/*function addItem(){
         let botao = document.querySelector('#botao');
-        botao.style.backgroundColor = '#4bdf2e';
+        botao.style.backgroundColor = '#2ab300';
+        botao.style.border = '#2ab300'
         botao.innerHTML = 'Item adicionado a lista de compras';
-    }
 
-    let novoitem = document.getElementById('v').value;
-    list.push(novoitem);
-    document.getElementById('v').value = "";
-    localStorage.listadecompras = JSON.stringify(list);
-    botao.value = "true";
-}
+        itens.push(item);
+        localStorage.setItem('itens', JSON.stringify(itens));
+}*/
+
+
