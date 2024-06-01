@@ -5,8 +5,11 @@ var itens = JSON.parse(localStorage.getItem('itens')) || [];
 //mostra o produto no bloco 1
 const itenslist1 = document.getElementById('bloco1');
 
+const randomIndex1 = Math.floor(Math.random() * itens.length);
+const itemRandom1 = itens[randomIndex1]
+
 if(itens.length > 0){
-    const item1 = itens[0];
+    const item1 = itemRandom1;
     const itemdiv1 = document.createElement('div');
     itemdiv1.innerHTML = 
         `<img src="${item1.foto}" alt="foto do produto">
@@ -20,8 +23,11 @@ if(itens.length > 0){
 //mostra o produto na primeira posiçao no bloco 2
 const itenslist2 = document.getElementById('bloco2');
 
+const randomIndex2 = Math.floor(Math.random() * itens.length);
+const itemRandom2 = itens[randomIndex2]
+
 if(itens.length > 0){
-    let item2 = itens[1];
+    const item2 = itemRandom2;
     let itemdiv2 = document.createElement('div');
     itemdiv2.innerHTML = 
         `<img src="${item2.foto}" alt="foto do produto">
@@ -35,8 +41,11 @@ if(itens.length > 0){
 //mostra o produto na segunda posiçao no bloco 2
 const itenslist3 = document.getElementById('bloco2');
 
+const randomIndex3 = Math.floor(Math.random() * itens.length);
+const itemRandom3 = itens[randomIndex3]
+
 if(itens.length > 0){
-    let item3 = itens[2];
+    const item3 = itemRandom3;
     let itemdiv3 = document.createElement('div');
     itemdiv3.innerHTML = 
         `<img src="${item3.foto}" alt="foto do produto">
@@ -50,8 +59,11 @@ if(itens.length > 0){
 //mostra o produto no bloco 3
 const itenslist4 = document.getElementById('bloco3');
 
+const randomIndex4 = Math.floor(Math.random() * itens.length);
+const itemRandom4 = itens[randomIndex4]
+
 if(itens.length > 0){
-    let item4 = itens[3];
+    const item4 = itemRandom4;
     let itemdiv4 = document.createElement('div');
     itemdiv4.innerHTML = 
         `<img src="${item4.foto}" alt="foto do produto">
@@ -65,8 +77,11 @@ if(itens.length > 0){
 //mostra o produto no bloco 4
 const itenslist5 = document.getElementById('bloco4');
 
+const randomIndex5 = Math.floor(Math.random() * itens.length);
+const itemRandom5 = itens[randomIndex5]
+
 if(itens.length > 0){
-    let item5 = itens[4];
+    const item5 = itemRandom5;
     let itemdiv5 = document.createElement('div');
     itemdiv5.innerHTML = 
         `<img src="${item5.foto}" alt="foto do produto">
@@ -80,8 +95,11 @@ if(itens.length > 0){
 //mostra o produto no bloco 5
 const itenslist6 = document.getElementById('bloco5');
 
+const randomIndex6 = Math.floor(Math.random() * itens.length);
+const itemRandom6 = itens[randomIndex6]
+
 if(itens.length > 0){
-    let item6 = itens[5];
+    const item6 = itemRandom6;
     let itemdiv6 = document.createElement('div');
     itemdiv6.innerHTML = 
         `<img src="${item6.foto}" alt="foto do produto">
@@ -95,8 +113,11 @@ if(itens.length > 0){
 //mostra o produto no bloco 6
 const itenslist7 = document.getElementById('bloco6');
 
+const randomIndex7 = Math.floor(Math.random() * itens.length);
+const itemRandom7 = itens[randomIndex7]
+
 if(itens.length > 0){
-    let item7 = itens[6];
+    const item7 = itemRandom7;
     let itemdiv7 = document.createElement('div');
     itemdiv7.innerHTML = 
         `<img src="${item7.foto}" alt="foto do produto">
@@ -110,8 +131,11 @@ if(itens.length > 0){
 //mostra o produto no bloco 7
 const itenslist8 = document.getElementById('bloco7');
 
+const randomIndex8 = Math.floor(Math.random() * itens.length);
+const itemRandom8 = itens[randomIndex8]
+
 if(itens.length > 0){
-    let item8 = itens[7];
+    const item8 = itemRandom8;
     let itemdiv8 = document.createElement('div');
     itemdiv8.innerHTML = 
         `<img src="${item8.foto}" alt="foto do produto">
@@ -125,8 +149,11 @@ if(itens.length > 0){
 //mostra o produto no bloco 8
 const itenslist9 = document.getElementById('bloco8');
 
+const randomIndex9 = Math.floor(Math.random() * itens.length);
+const itemRandom9 = itens[randomIndex9]
+
 if(itens.length > 0){
-    let item9 = itens[8];
+    const item9 = itemRandom9;
     let itemdiv9 = document.createElement('div');
     itemdiv9.innerHTML = 
         `<img src="${item9.foto}" alt="foto do produto">
