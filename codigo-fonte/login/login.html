@@ -1,22 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tela de login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
 </head>
+
 <body>
-    <dive>
-        <h1>Bem Vindo</h1>
-        <h1>ACESSE SUA CONTA AGORA</h1>
-        <h1>E-mail/CNPJ</h1>
-        <input placeholder="E-MAIL/CNPJ">
-        <br><br>
-        <input placeholder="SENHA">
-        <br><br>
-        <button></button> esqueci a senha
-        <br><br>
-        <button>ACESSAR</button> <button>CADASTRAR</button>
-    </dive>
+    <div class="left">
+        <img src="assets/mulher.jpg" alt="mulher" />
+    </div>
+    <div class="mid">
+        <div class="conteudo">
+            <h1>BEM VINDO</h1>
+            <p id="acessarConta">ACESSE SUA CONTA AGORA</p>
+            <p id="email">E-mail</p>
+            <input id="inputEmail" class="campos" type="text">
+            <p id="senha">Senha</p>
+            <input id="inputSenha" class="campos" type="password">
+            <br>
+            <label for="marca_email">   
+                ESQUECI A SENHA
+            </label>
+            <br>
+            <p id="tpUsuario">Selecione seu tipo de usuario</p><br>
+            <div class="usCliente">
+                <input type="checkbox" name="cliente" id="cxcliente">
+                <p id="txCliente">Cliente</p>
+            </div>      
+            <div class="usMercado">
+                <input type="checkbox" name="mercado" id="cxmercado">
+                <p id="txMercado">Mercado</p>
+            </div>
+            <div class="buttons">
+            <button id="btAcesso">ACESSAR</button>
+            <button id="btcadastro">CADASTRAR</button>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <img src="assets/carrinho.jpg" alt="carrinho" />
+    </div>
+
 </body>
+
 </html>

@@ -45,6 +45,7 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
 
 
     const item = {
+        
         foto: foto,
         nome: nome,
         marca: marca,
@@ -69,3 +70,6 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     inserirQtd.style.display = 'none';
     validadePromo.style.display = 'none';
 });
+
+
+

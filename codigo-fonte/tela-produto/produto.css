@@ -1,7 +1,7 @@
 body{
     background-color: #e4dbdb;
     margin: 0%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font:normal 18pt 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -21,6 +21,11 @@ body{
     height: 18vh;
     background-color: #ECD931;
     grid-area: header;
+}
+
+#btVoltar{
+    position: absolute;
+    transform: scale(0.5,0.5);
 }
 
 #main{
