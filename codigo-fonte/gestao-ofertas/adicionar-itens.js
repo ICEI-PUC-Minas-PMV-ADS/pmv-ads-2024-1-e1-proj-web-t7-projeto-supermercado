@@ -1,6 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.linkMenu');
+    const currentUrl = window.location.href.split('/').pop(); // Gets the current page file name
+
+    links.forEach(link => {
+        if (link.getAttribute('href') === currentUrl) {
+            link.classList.add('linkAtualMenu');
+        }
+    });
+});
+
 const limiteItensSim = document.getElementById('limiteItensSim');//checkbox
 const inserirQtd = document.querySelector('.qtd-permitida'); //div que contem a campo limite ietns
-const itemPromocao = document.getElementById('itemPromocao');//checkbox
 const validadePromo = document.querySelector('.validadePromo'); // div que contem campo selecionar data
 
 // se o checkbox "limite de itens" for marcado, ira exibir um campo para inserir o limite de itens
@@ -40,6 +50,7 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     const maiorIdadeSim = document.getElementById('maiorIdadeSim').checked;
     const limiteItensSim = document.getElementById('limiteItensSim').checked;
     const campoLimiteItem = document.getElementById('campo-limite-item').value;
+    const itemPromocao = document.getElementById('itemPromocao').checked;//checkbox
     const inicioPromo = document.getElementById('inicioPromo').value;
     const fimPromo = document.getElementById('fimPromo').value;
 
@@ -54,6 +65,7 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
         maiorIdadeSim: maiorIdadeSim,
         limiteItensSim: limiteItensSim,
         campoLimiteItem: limiteItensSim ? campoLimiteItem : null,
+        itemPromocaoSim: itemPromocao,
         inicioPromo: itemPromocao ? formatarDataBr(inicioPromo) : null,
         fimPromo: itemPromocao ? formatarDataBr(fimPromo) : null
     };

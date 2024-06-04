@@ -41,7 +41,7 @@ function dataPromo(item) {
 // Exibindo os itens na página
 const itensList = document.getElementById('itensList');
 itens.forEach(item => {
-    if (item.itemPromocaoSim == false) { //os itens so será exibidos na página se o item nao for marcado como promocao
+    if (item.itemPromocaoSim) { //os itens so será exibidos na página se o item for marcado como promocao
         const itemDiv = document.createElement('div');
         itemDiv.innerHTML = `
             <img src="${item.foto}" alt="Foto do Produto">
@@ -75,4 +75,5 @@ function excluirItem(itemId) {
          location.reload();
     }
 }
+
 

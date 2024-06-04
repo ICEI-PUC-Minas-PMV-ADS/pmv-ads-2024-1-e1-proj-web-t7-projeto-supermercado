@@ -42,13 +42,19 @@ li {
 ul {
     margin: 0px;
 }
-.barra-navegacao a {
+ 
+.linkMenu{
     text-decoration: none;
     color: black;
     font-size: 13px;
     border-left: 1px solid #000;
     padding: 0px 15px;
 }
+
+.linkAtualMenu {
+    color:#555555;
+}
+
 /*cabeçalho fim*/ 
 section {
     margin:10px 20px;
@@ -58,4 +64,26 @@ section {
 section {
     margin:10px 20px;
     width: 746px;
+}
+
+#itensList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#itensList > div {
+    background-color: #ECD931;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+#itensList img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
