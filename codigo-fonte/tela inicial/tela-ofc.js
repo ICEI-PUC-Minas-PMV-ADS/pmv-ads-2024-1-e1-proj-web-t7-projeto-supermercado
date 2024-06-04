@@ -165,3 +165,27 @@ if(itens.length > 0){
     itenslist9.innerHTML = '<p>lista vazia</p>'
 }
 }
+
+//barra de pesquisa
+document.addEventListener("DOMContentLoaded",function(){
+
+    const busca = document.querySelector('#busca')
+    const result = document.querySelector('#resultado')
+
+    busca.addEventListener('input',function(){
+        const min = busca.value.toLocaleLowerCase()
+        result.innerHTML = '';
+
+        const filtro = itens.filter(obj => obj.toLocaleLowerCase().includes(min));
+
+        filtro.forEach(obj => {
+            const resultitem = document.createElement('div')
+            resultitem.textContent = obj;
+            result.appendChild('resultitem')
+            
+        });
+        if (filtro.length === 0 && min !== '') {
+            result.textContent = 'Nenhum resultado encontrado';
+        }
+    });
+})

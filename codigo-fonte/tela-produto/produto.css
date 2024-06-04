@@ -65,11 +65,23 @@ body{
     grid-area: aside;
 }
 
-#aside p{
+#texto{
     position: absolute;
     top: 46%;
     right: 12%;
     font-size: 19px;
+}
+
+#aside a{
+    color: black;
+}
+
+#aside div{
+    display: flex;
+    flex-flow: row;
+    margin-top: 50px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 #footer{

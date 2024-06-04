@@ -25,11 +25,8 @@ body{
     padding: 10px;
 }
 
-.conteiner #Ofertas{
-    position: absolute;
-    color: red;
-    top: 18%;
-    margin-left:37%;
+.conteiner a{
+    color: black;
 }
 
 #topo{
@@ -227,6 +224,15 @@ body{
     height: 5vh;
 }
 
+#resultado{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: 30%;
+    width: 58vh;
+    margin-top: 5%;
+}
+
 #carrinho{
     position:absolute;
     left: 24%;
@@ -250,7 +256,7 @@ body{
     right: 45%;
 }
 
-#filtro{
+#filtros{
     position: absolute;
     display: inline;
     color: black;
