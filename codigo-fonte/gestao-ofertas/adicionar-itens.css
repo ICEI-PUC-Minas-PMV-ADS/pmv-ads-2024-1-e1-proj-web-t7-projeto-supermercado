@@ -70,9 +70,6 @@ section h1 {
     padding-top: 10px;
 }
 /* formulario */
-.upload-imagem input {
-    height: 19px;
-}
 
 form {
     display: grid;
@@ -86,11 +83,6 @@ form {
 
     .upload-imagem {
         grid-area: upload-imagem;
-    }
-
-    .upload-imagem input {
-        font-size: 12px ;
-        margin-top: 3px;
     }
     
     .nome-item {
@@ -145,4 +137,3 @@ form {
     .enviar {
         margin: 9px;
     }
-

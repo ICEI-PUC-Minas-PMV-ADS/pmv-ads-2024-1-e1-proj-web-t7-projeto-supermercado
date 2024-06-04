@@ -44,7 +44,9 @@ itens.forEach(item => {
     if (item.itemPromocaoSim == false) { //os itens so será exibidos na página se o item nao for marcado como promocao
         const itemDiv = document.createElement('div');
         itemDiv.innerHTML = `
-            <img src="${item.foto}" alt="Foto do Produto">
+              <div class="item-imagem">
+                  <img src="${item.foto}" alt="Foto do Produto"> 
+              </div>
             <p>${item.nome} - ${item.marca}</p>
             <p>Valor R$: ${item.preco}</p>
             <p>Categoria: ${item.categoria}</p>
@@ -74,5 +76,4 @@ function excluirItem(itemId) {
          // Atualiza a página
          location.reload();
     }
-}
-
+};

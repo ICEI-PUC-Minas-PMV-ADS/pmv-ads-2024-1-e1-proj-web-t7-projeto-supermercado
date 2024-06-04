@@ -32,10 +32,10 @@
                 <h1>Cadastro de itens</h1>
 
                 <form id="itemForm">
-                    
+
                     <div class="upload-imagem formulario">
-                        <label for="foto">Foto do produto:</label><br>
-                        <input type="file" id="foto" accept="img/*" required>
+                        <label for="foto">URL da Imagem:</label><br>
+                        <input type="url" id="foto" placeholder="Insira a URL da imagem">
                     </div>
         
                     <div class="nome-item formulario">
@@ -59,7 +59,7 @@
                     <div class="preco formulario">
                         <label for="preco">Preço R$:</label>
                         <br>
-                        <input type="number" id="preco" step="0.01" required>
+                        <input type="number" id="preco" step="0.01" placeholder="Ex: 3,75" required>
                     </div>
 
                    <div class="form-flex">

@@ -42,7 +42,8 @@ function formatarDataBr(dataISO) {
 document.getElementById('itemForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const foto = document.getElementById('foto').value; 
+    //const foto = document.getElementById('foto').value;
+    const foto = document.getElementById('foto').value
     const nome = document.getElementById('nome').value;
     const marca = document.getElementById('marca').value;
     const preco = document.getElementById('preco').value;

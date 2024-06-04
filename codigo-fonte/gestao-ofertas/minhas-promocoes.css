@@ -82,8 +82,11 @@ section {
     text-align: left;
 }
 
-#itensList img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 15px;
+.item-imagem {
+    text-align: center;
+}
+
+.item-imagem img {
+    width: 260px;
+    height: 220px;
 }

@@ -41,10 +41,12 @@ function dataPromo(item) {
 // Exibindo os itens na página
 const itensList = document.getElementById('itensList');
 itens.forEach(item => {
-    if (item.itemPromocaoSim) { //os itens so será exibidos na página se o item for marcado como promocao
+    if (item.itemPromocaoSim == true) { //os itens so será exibidos na página se o item nao for marcado como promocao
         const itemDiv = document.createElement('div');
         itemDiv.innerHTML = `
-            <img src="${item.foto}" alt="Foto do Produto">
+              <div class="item-imagem">
+                  <img src="${item.foto}" alt="Foto do Produto"> 
+              </div>
             <p>${item.nome} - ${item.marca}</p>
             <p>Valor R$: ${item.preco}</p>
             <p>Categoria: ${item.categoria}</p>
@@ -74,6 +76,4 @@ function excluirItem(itemId) {
          // Atualiza a página
          location.reload();
     }
-}
-
-
+};
