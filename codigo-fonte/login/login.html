@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Document</title>
@@ -18,28 +19,20 @@
     <div class="mid">
         <div class="conteudo">
             <h1>BEM VINDO</h1>
-            <p id="acessarConta">ACESSE SUA CONTA AGORA</p>
-            <p id="email">E-mail</p>
-            <input id="inputEmail" class="campos" type="text">
-            <p id="senha">Senha</p>
-            <input id="inputSenha" class="campos" type="password">
+            <p>ACESSE SUA CONTA AGORA</p>
+            <p>E-mail/CNPJ</p>
+            <input class="campos" type="text">
+            <p>Senha</p>
+            <input class="campos" type="password">
             <br>
-            <label for="marca_email">   
+            <label for="marca_email">
+                <input type="checkbox" name="contato" value="email" id="marca_email" class="input-padrao">
                 ESQUECI A SENHA
-            </label>
+                </label>
             <br>
-            <p id="tpUsuario">Selecione seu tipo de usuario</p><br>
-            <div class="usCliente">
-                <input type="checkbox" name="cliente" id="cxcliente">
-                <p id="txCliente">Cliente</p>
-            </div>      
-            <div class="usMercado">
-                <input type="checkbox" name="mercado" id="cxmercado">
-                <p id="txMercado">Mercado</p>
-            </div>
             <div class="buttons">
-            <button id="btAcesso">ACESSAR</button>
-            <button id="btcadastro">CADASTRAR</button>
+                <button onclick="validarLogin()">ACESSAR</button>
+                <button onclick="redirecionar()">CADASTRAR</button>
             </div>
         </div>
     </div>
