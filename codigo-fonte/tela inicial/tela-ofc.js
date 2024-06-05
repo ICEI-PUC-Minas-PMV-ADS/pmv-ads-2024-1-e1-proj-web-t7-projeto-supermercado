@@ -166,26 +166,9 @@ if(itens.length > 0){
 }
 }
 
-//barra de pesquisa
-document.addEventListener("DOMContentLoaded",function(){
+//add item a lista para carregar detalhes
+const conteiner = document.querySelector('.conteiner')
 
-    const busca = document.querySelector('#busca')
-    const result = document.querySelector('#resultado')
-
-    busca.addEventListener('input',function(){
-        const min = busca.value.toLocaleLowerCase()
-        result.innerHTML = '';
-
-        const filtro = itens.filter(obj => obj.toLocaleLowerCase().includes(min));
-
-        filtro.forEach(obj => {
-            const resultitem = document.createElement('div')
-            resultitem.textContent = obj;
-            result.appendChild('resultitem')
-            
-        });
-        if (filtro.length === 0 && min !== '') {
-            result.textContent = 'Nenhum resultado encontrado';
-        }
-    });
+conteiner.addEventListener('click',function(){
+    
 })
