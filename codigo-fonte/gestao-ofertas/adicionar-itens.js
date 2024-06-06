@@ -1,3 +1,4 @@
+//destacar na barra de navegaçao o link atual da pag
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.linkMenu');
     const currentUrl = window.location.href.split('/').pop(); // Gets the current page file name
@@ -37,6 +38,10 @@ function formatarDataBr(dataISO) {
     return `${dia}/${mes}/${ano}`;
 }
 
+//gerar id
+function geradorId() {
+    return Date.now() + '-' + Math.floor(Math.random() * 1000);
+}
 
 // quando formulario for enviado, as informaçoes serao atribuidas a um objeto chamado "item" 
 document.getElementById('itemForm').addEventListener('submit', function(event) {
@@ -55,9 +60,13 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     const inicioPromo = document.getElementById('inicioPromo').value;
     const fimPromo = document.getElementById('fimPromo').value;
 
+    // chama a funçao que Gera um ID único
+    const itemId = geradorId();
 
+    //cria um objeto para o item
     const item = {
         
+        id: itemId,
         foto: foto,
         nome: nome,
         marca: marca,
