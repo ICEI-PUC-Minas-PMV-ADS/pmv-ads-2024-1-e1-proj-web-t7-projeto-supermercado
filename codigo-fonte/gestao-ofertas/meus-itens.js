@@ -38,42 +38,39 @@ function dataPromo(item) {
     }
 }
 
-// Exibindo os itens na página
-const itensList = document.getElementById('itensList');
-itens.forEach(item => {
-    if (item.itemPromocaoSim == false) { //os itens so será exibidos na página se o item nao for marcado como promocao
-        const itemDiv = document.createElement('div');
-        itemDiv.innerHTML = `
-              <div class="item-imagem">
-                  <img src="${item.foto}" alt="Foto do Produto"> 
-              </div>
-            <p>${item.nome} - ${item.marca}</p>
-            <p>Valor R$: ${item.preco}</p>
-            <p>Categoria: ${item.categoria}</p>
-            ${itemMaiorIdade(item)}
-            ${limiteItem(item)}
-            ${dataPromo(item)}
-            <button onclick="excluirItem(${item.id})">Excluir</button>
-        `;
-        itensList.appendChild(itemDiv);
-    }
-});
-
 // Função para excluir um item
-function excluirItem(itemId) {
-    // Encontra o índice do item com o ID fornecido
-    const index = itens.findIndex(item => item.id === itemId);
-    // Remove o item do array
+function excluirItem(id) {
+    const index = itens.findIndex(item => item.id === id);
     if (index !== -1) {
-        itens.splice(index, 1);
-        // Atualiza o localStorage
-        localStorage.setItem('itens', JSON.stringify(itens));
-        // Remove o elemento HTML correspondente da lista
-        const itemDiv = document.getElementById(`item-${itemId}`);
-        if (itemDiv) {
-            itemDiv.remove();
-        }
-         // Atualiza a página
-         location.reload();
+        itens.splice(index, 1); // Remove o item do array
+        localStorage.setItem('itens', JSON.stringify(itens)); // Atualiza o localStorage
+        atualizarItensNaPagina(); // Atualiza a exibição na página
     }
-};
+}
+
+// Função para atualizar a exibição dos itens na página
+function atualizarItensNaPagina() {
+    itensList.innerHTML = ''; // Limpa a lista de itens na página
+    itens.forEach(item => {
+        if (item.itemPromocaoSim == false) { //os itens só serão exibidos na página se o item não for marcado como promoção
+            const itemDiv = document.createElement('div');
+            itemDiv.innerHTML = `
+                <div class="item-imagem">
+                    <img src="${item.foto}" alt="Foto do Produto"> 
+                </div>
+                <p>${item.nome} - ${item.marca}</p>
+                <p>Valor R$: ${item.preco}</p>
+                <p>Categoria: ${item.categoria}</p>
+                ${itemMaiorIdade(item)}
+                ${limiteItem(item)}
+                ${dataPromo(item)}
+                <button onclick="excluirItem('${item.id}')">Excluir</button>
+            `;
+            itensList.appendChild(itemDiv);
+        }
+    });
+}
+
+// Exibindo os itens na página inicialmente
+const itensList = document.getElementById('itensList');
+atualizarItensNaPagina();
