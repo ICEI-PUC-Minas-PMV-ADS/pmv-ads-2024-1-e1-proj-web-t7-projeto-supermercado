@@ -3,16 +3,7 @@ var list = JSON.parse(localStorage.getItem('lista de compras')) || [];
 const itens = JSON.parse(localStorage.getItem('itens')) || []
 
 
-/*function addItem(){
-        let botao = document.querySelector('#botao');
-        botao.style.backgroundColor = '#2ab300';
-        botao.style.border = '#2ab300'
-        botao.innerHTML = 'Item adicionado a lista de compras';
-
-        itens.push(item);
-        localStorage.setItem('itens', JSON.stringify(itens));
-}*/
-
+//mostra os produtos semelhantes
 const bloco = window.document.querySelector('#aside')
 
 const randomIndex1 = Math.floor(Math.random() * itens.length);
@@ -44,3 +35,6 @@ if(itens.length > 0){
 }else{
     bloco.innerHTML = '<p>lista vazia</p>'
 }
+
+//mostra o produto na tela
+const mostraItem = document.getElementById('main')

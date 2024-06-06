@@ -4,22 +4,26 @@ function mostraitem(){
 var itens = JSON.parse(localStorage.getItem('itens')) || [];
 
 //mostra o produto no bloco 1
-const itenslist1 = document.getElementById('bloco1');
 
-const randomIndex1 = Math.floor(Math.random() * itens.length);
-const itemRandom1 = itens[randomIndex1]
+document.addEventListener('DOMContentLoaded', () => {
 
-if(itens.length > 0){
-    const item1 = itemRandom1;
-    const itemdiv1 = document.createElement('div');
-    itemdiv1.innerHTML = 
-        `<img src="${item1.foto}" alt="foto do produto">
-        <p><a href="../tela-produto/produto.html" target="_blank" ">${item1.nome}-${item1.marca}</a></p>
-        <p>valor R$:${item1.preco}</p>`;
-    itenslist1.appendChild(itemdiv1);
-}else{
-    itenslist1.innerHTML = '<p>lista vazia</p>'
-}
+    const itenslist1 = document.getElementById('bloco1');
+
+    const randomIndex1 = Math.floor(Math.random() * itens.length);
+    const itemRandom1 = itens[randomIndex1]
+
+    if(itens.length > 0){
+        const item1 = itemRandom1;
+        const itemdiv1 = document.createElement('div');
+        itemdiv1.innerHTML = 
+            `<img src="${item1.foto}" alt="foto do produto">
+            <p><a href="../tela-produto/produto.html" target="_blank" ">${item1.nome}-${item1.marca}</a></p>
+            <p>valor R$:${item1.preco}</p>`;
+        itenslist1.appendChild(itemdiv1);
+    }else{
+        itenslist1.innerHTML = '<p>lista vazia</p>'
+    }
+})
 
 //mostra o produto na primeira posiçao no bloco 2
 const itenslist2 = document.getElementById('bloco2');
@@ -166,9 +170,3 @@ if(itens.length > 0){
 }
 }
 
-//add item a lista para carregar detalhes
-const conteiner = document.querySelector('.conteiner')
-
-conteiner.addEventListener('click',function(){
-    
-})
