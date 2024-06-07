@@ -9,8 +9,8 @@ function redirecionar() {
     
         var loginCorreto = localStorage.getItem("login");
         var senhaCorreta = localStorage.getItem("senha");
-        loginCorreto = "tobias@123"
-        senhaCorreta = "123"
+        loginCorreto= "tobias@123"
+        senhaCorreta="123"
         if (login === loginCorreto && senha === senhaCorreta) {
             window.location.href = "../tela%20inicial/tela-ofc.html"
         } else {
