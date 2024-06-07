@@ -2,6 +2,17 @@ var list = JSON.parse(localStorage.getItem('lista de compras')) || [];
 
 const itens = JSON.parse(localStorage.getItem('itens')) || []
 
+//mostra os detalhes do produto
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const foto = urlParams.get('foto');
+    const nome = urlParams.get('nome');
+
+    document.getElementById('elementTitle').textContent = foto;
+    document.getElementById('elementDetails').textContent = nome;
+});
+
+
 
 //mostra os produtos semelhantes
 const bloco = window.document.querySelector('#aside')

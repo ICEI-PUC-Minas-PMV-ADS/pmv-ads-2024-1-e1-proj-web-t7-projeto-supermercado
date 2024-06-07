@@ -332,6 +332,17 @@ body{
     height: 30vh;
 }
 
+.conteiner img{
+    max-width: 150px;
+    max-height: 200px;
+    align-items: center;
+}
+
+div p{
+    font-size: 15pt;    
+
+}
+
 
 
 @media screen and (max-width: 900px) {
