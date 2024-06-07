@@ -1,0 +1,62 @@
+body, html{
+   height: 100%;
+   display: flex;
+   font-family:Inter
+ }
+ p{
+   font-weight:600
+ }
+ h1{
+   font-size: 40px;
+   font-weight:900
+ }
+
+img {
+   width: 100%;
+   height: 100%;
+}
+
+.conteudo {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.mid {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 650px;
+   height: 100%;
+   background: #EEC534;
+
+}
+button{
+   margin-right: 15px;
+   background: transparent;
+   border-radius: 15px;
+   border: 3px solid;
+   padding: 15px;
+   font-weight:900;
+   background: #EEC534;
+
+}
+.buttons{
+   display: flex;
+}
+input{
+   border: none;
+   padding: 15px 40px; 
+}
+.input-padrao{
+   min-width: 15px;
+   min-height: 15px;
+}
+label {
+   font-size: 12px;
+}
+
+button:hover {
+   background: #f3d35e;
+}

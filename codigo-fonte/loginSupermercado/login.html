@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="left">
+        <img src="assets/mulher.jpg" alt="mulher" />
+    </div>
+    <div class="mid">
+        <div class="conteudo">
+            <h1>BEM VINDO</h1>
+            <p>ACESSE SUA CONTA AGORA</p>
+            <p>E-mail/CNPJ</p>
+            <input class="campos" type="text" id="login" nome="login">
+            <p>Senha</p>
+            <input class="campos" type="password" id="senha" nome="senha">
+            <br>
+            <label for="marca_email">
+                <input type="checkbox" name="contato" value="email" id="marca_email" class="input-padrao">
+                ESQUECI A SENHA
+                </label>
+            <br>
+            <div class="buttons">
+                <button onclick="validarLogin()">ACESSAR</button>
+                <button onclick="redirecionar()">CADASTRAR</button>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <img src="assets/carrinho.jpg" alt="carrinho" />
+    </div>
+
+</body>
+
+</html>

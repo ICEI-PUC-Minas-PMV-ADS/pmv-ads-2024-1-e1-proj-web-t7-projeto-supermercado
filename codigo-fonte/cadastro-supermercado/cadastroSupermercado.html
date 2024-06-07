@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastroSupermercado.css">
+    <title>Cadastro consumidor</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastre-se</h2>
+        
+        <div class="formulario">
+            <form id="cadastroForm">
+                <label for="nomeSupermercado">Nome do Supermercado:</label>
+                <input type="text" id="nomeSupermercado" name="nomeSupermercado" required><br><br>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required placeholder="Rua, numero, bairro e cidade" ><br><br>
+
+                <label for="localizacao">Localização:</label>
+                <select id="localizacao" name="localizacao" required>
+                    <option value="">Selecione uma região</option>
+                    <option value="Norte">Norte</option>
+                    <option value="Sul">Sul</option>
+                    <option value="Leste">Leste</option>
+                    <option value="Oeste">Oeste</option>
+                    <option value="Noroeste">Noroeste</option>
+                    <option value="Nordeste">Nordeste</option>
+                    <option value="Região Metropolitana">Região Metropolitana</option>
+                </select><br><br>
+
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj" required pattern="\d{14}"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required><br><br>
+
+                <label for="confirmarSenha">Confirmar Senha:</label>
+                <input type="password" id="confirmarSenha" name="confirmarSenha" required><br><br>
+
+                <input type="submit" value="Cadastrar">
+            </form>
+        </div>
+    </div>
+    <script src="cadastroSupermercado.js"></script>
+</body>
+</html>

@@ -46,15 +46,20 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
         senha: senha
     };
 
-    //carregar localstorage
+    // Carregar localStorage
     let cadConsumidor = JSON.parse(localStorage.getItem('cadConsumidor')) || [];
-    //adc novos dados
+
+    // Verifica se cadConsumidor é um array, caso contrário, inicializa-o como um array vazio
+    if (!Array.isArray(cadConsumidor)) {
+        cadConsumidor = [];
+    }
+
+    // Adicionar novos dados
     cadConsumidor.push(perfilConsumidor);
 
-    //salvar no localstorage
-    localStorage.setItem('cadConsumidor', JSON.stringify('cadConsumidor'));
+    // Salvar no localStorage
+    localStorage.setItem('cadConsumidor', JSON.stringify(cadConsumidor));
 
-    //limpar formulário após envio
-    document.getElementById('cadastroForm').reset();
-
+    // Redirecionar para a página de login
+    window.location.href = "../loginConsumidor/login.html";
 });
