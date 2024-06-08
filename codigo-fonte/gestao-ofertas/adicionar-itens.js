@@ -43,12 +43,22 @@ function geradorId() {
     return Date.now() + '-' + Math.floor(Math.random() * 1000);
 }
 
-// quando formulario for enviado, as informaçoes serao atribuidas a um objeto chamado "item" 
 document.getElementById('itemForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    //const foto = document.getElementById('foto').value;
-    const foto = document.getElementById('foto').value
+    // Recupera o login armazenado no localStorage
+    const login = localStorage.getItem('login');
+
+      // Recupera o perfil do supermercado a partir do CNPJ (login)
+      const cadSupermercado = JSON.parse(localStorage.getItem('cadSupermercado')) || [];
+      const perfilSupermercado = cadSupermercado.find(supermercado => supermercado.cnpj === login);
+  
+      if (!perfilSupermercado) {
+          alert('Perfil do supermercado não encontrado.');
+          return;
+      }
+
+    const foto = document.getElementById('foto').value;
     const nome = document.getElementById('nome').value;
     const marca = document.getElementById('marca').value;
     const preco = document.getElementById('preco').value;
@@ -56,19 +66,22 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     const maiorIdadeSim = document.getElementById('maiorIdadeSim').checked;
     const limiteItensSim = document.getElementById('limiteItensSim').checked;
     const campoLimiteItem = document.getElementById('campo-limite-item').value;
-    const itemPromocao = document.getElementById('itemPromocao').checked;//checkbox
+    const itemPromocao = document.getElementById('itemPromocao').checked;
     const inicioPromo = document.getElementById('inicioPromo').value;
     const fimPromo = document.getElementById('fimPromo').value;
 
     // chama a funçao que Gera um ID único
     const itemId = geradorId();
 
-    //cria um objeto para o item
+
     const item = {
-        
-        id: itemId,
+        idSupermercado: login, //o id do Supermercado é o cnpj digitado no login
+        id: itemId, //id unico para o item cadastrado
         foto: foto,
         nome: nome,
+        nomeSupermercado: perfilSupermercado.nomeSupermercado,
+        endereco: perfilSupermercado.endereco,
+        localizacao: perfilSupermercado.localizacao,
         marca: marca,
         preco: preco,
         categoria: categoria,
@@ -92,6 +105,3 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     inserirQtd.style.display = 'none';
     validadePromo.style.display = 'none';
 });
-
-
-

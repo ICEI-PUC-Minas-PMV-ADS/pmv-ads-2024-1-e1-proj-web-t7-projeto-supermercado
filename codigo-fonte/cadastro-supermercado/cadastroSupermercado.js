@@ -29,16 +29,7 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
         return;
     }
 
-    // Criando o objeto com os dados do formulário
-    const perfilSupermercado = {
-        nomeSupermercado: nomeSupermercado,
-        endereco: endereco,
-        localizacao: localizacao,
-        cnpj: cnpj,
-        email: email,
-        senha: senha
-    };
-
+    
     // Carregar localStorage
     let cadSupermercado = JSON.parse(localStorage.getItem('cadSupermercado')) || [];
 
