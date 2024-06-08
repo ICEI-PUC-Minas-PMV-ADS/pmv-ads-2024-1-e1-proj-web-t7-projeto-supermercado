@@ -345,9 +345,9 @@ body{
 
 .element p{
     text-align: start;
-    font-style: uppercase;
     font-size: 16pt;
     margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .preco{

@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bloco1.appendChild(elementDiv);
 
         elementDiv.addEventListener('click', () => {
-            const url = `../tela-produto/produto.html?foto=${encodeURIComponent(data.foto)}&nome=${encodeURIComponent(data.nome)}&preco=${encodeURIComponent(data.preco)}&marca=${encodeURIComponent(data.marca)}&maioridade=${encodeURIComponent(data.maiorIdadeSim)}&limiteitens=${encodeURIComponent(data.parseInt(campoLimiteItem).value)}&fimpromo=${encodeURIComponent(data.fimPromo)}`;
+            const url = `../tela-produto/produto.html?foto=${encodeURIComponent(data.foto)}&nome=${encodeURIComponent(data.nome)}&preco=${encodeURIComponent(data.preco)}`;
             window.open(url, '_blank');
         });
 }});

@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const foto = itemsurl.get('foto');
     const nome = itemsurl.get('nome');
     const preco = itemsurl.get('preco');
-    const marca = itemsurl.get('marca');
-    const maioridade = itemsurl.get('maioridade');
 
     const main =document.getElementById('main');
 
@@ -29,39 +27,108 @@ document.addEventListener('DOMContentLoaded', () => {
     mostrapreco.classList.add('preco')
     main.appendChild(mostrapreco)
 
-});
+}); 
 
 
+//add item a lista de compras
+function addItem(){
+    const itemsurl = new URLSearchParams(window.location.search);
+    const foto = itemsurl.get('foto');
+    const nome = itemsurl.get('nome');
+    const preco = itemsurl.get('preco');
 
-//mostra os produtos semelhantes
-const bloco = window.document.querySelector('#aside')
+    
+        const botao = document.querySelector('#botao')
+        botao.innerHTML = 'Item Adicionado a sua Lista'
+        botao.style.backgroundColor = 'lightgreen'
+    
+        const lista = {
+    
+            foto:foto,
+            nome:nome,
+            preco:preco
+            
+        };
+    
+        let listacompras = JSON.parse(localStorage.getItem('listacompras')) || [];
+        listacompras.push(lista);
+        localStorage.setItem('listacompras', JSON.stringify(listacompras));
+    
+    }
 
-const randomIndex1 = Math.floor(Math.random() * itens.length);
-const itemRandom1 = itens[randomIndex1]
+//itens semalhantes
 
-if(itens.length > 0){
-    const item1 = itemRandom1;
-    const itemdiv1 = document.createElement('div');
-    itemdiv1.innerHTML = 
-        `<img src="${item1.foto}" alt="foto do produto">
-        <p><a href="../tela-produto/produto.html" target="_blank" ">${item1.nome}-${item1.marca}</a></p>
-        <p>valor R$:${item1.preco}</p>`;
-    bloco.appendChild(itemdiv1);
-}else{
-    bloco.innerHTML = '<p>lista vazia</p>'
-}
+//1º bloco
+document.addEventListener('DOMContentLoaded', () => {
+    const aside = document.querySelector('#aside');
 
-const randomIndex2 = Math.floor(Math.random() * itens.length);
-const itemRandom2 = itens[randomIndex2]
+    //selecionando itens aleatórios do array
+    const randomIndex1 = Math.floor(Math.random() * itens.length);
+    const itemRandom1 = itens[randomIndex1]
 
-if(itens.length > 0){
-    const item2 = itemRandom2;
-    const itemdiv2 = document.createElement('div');
-    itemdiv2.innerHTML = 
-        `<img src="${item2.foto}" alt="foto do produto">
-        <p><a href="../tela-produto/produto.html" target="_blank" ">${item2.nome}-${item2.marca}</a></p>
-        <p>valor R$:${item2.preco}</p>`;
-    bloco.appendChild(itemdiv2);
-}else{
-    bloco.innerHTML = '<p>lista vazia</p>'
-}
+    // Gerar dinamicamente os elementos clicáveis
+    if (itens.length > 0) {
+        const data = itemRandom1;
+        console.log('Exibindo item:', data);
+
+        const elementDiv = document.createElement('div');
+        elementDiv.classList.add('semelhantes');
+
+        //motra a imagem do produto 
+        if(itemRandom1.foto){
+            const img = document.createElement('img')
+            img.src=data.foto
+            img.alt=itemRandom1.nome
+            elementDiv.appendChild(img)
+        }
+
+        //nome do produto-
+        const nsemelhante = document.createElement('p')
+        nsemelhante.innerHTML = `<p id="nsemelhante">${data.nome}</p> <p id="psemelhante">R$${data.preco}</p>`
+        elementDiv.appendChild(nsemelhante)
+
+        aside.appendChild(elementDiv);
+
+        elementDiv.addEventListener('click', () => {
+            const url = `../tela-produto/produto.html?foto=${encodeURIComponent(data.foto)}&nome=${encodeURIComponent(data.nome)}&preco=${encodeURIComponent(data.preco)}`;
+            window.open(url, '_blank');
+        });}}
+);
+
+//2º bloco
+document.addEventListener('DOMContentLoaded', () => {
+    const aside = document.querySelector('#aside');
+
+    //selecionando itens aleatórios do array
+    const randomIndex1 = Math.floor(Math.random() * itens.length);
+    const itemRandom1 = itens[randomIndex1]
+
+    // Gerar dinamicamente os elementos clicáveis
+    if (itens.length > 0) {
+        const data = itemRandom1;
+        console.log('Exibindo item:', data);
+
+        const elementDiv = document.createElement('div');
+        elementDiv.classList.add('semelhantes');
+
+        //motra a imagem do produto 
+        if(itemRandom1.foto){
+            const img = document.createElement('img')
+            img.src=data.foto
+            img.alt=itemRandom1.nome
+            elementDiv.appendChild(img)
+        }
+
+        //nome do produto-
+        const nsemelhante = document.createElement('p')
+        nsemelhante.innerHTML = `<p id="nsemelhante">${data.nome}</p> <p id="psemelhante">R$${data.preco}</p>`
+        elementDiv.appendChild(nsemelhante)
+
+        aside.appendChild(elementDiv);
+
+        elementDiv.addEventListener('click', () => {
+            const url = `../tela-produto/produto.html?foto=${encodeURIComponent(data.foto)}&nome=${encodeURIComponent(data.nome)}&preco=${encodeURIComponent(data.preco)}`;
+            window.open(url, '_blank');
+        });}}
+);
+

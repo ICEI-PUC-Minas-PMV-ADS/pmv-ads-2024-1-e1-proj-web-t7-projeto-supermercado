@@ -81,32 +81,39 @@ main img{
     background-color: #ffffff;
     margin-top: 5vh;
     margin-right: 2%;
-    height: 50vh;
+    height: 55vh;
     border-radius: 10px;
     grid-area: aside;
 }
 
 #aside img{
-    max-width: 200px;
-    max-height: 150px;
+    max-width: 150px;
+    max-height: 110px;
 }
 
 #texto{
-    position: absolute;
-    top: 46%;
-    right: 12%;
-    font-size: 19px;
+    margin-top: 1%;
+    font-size: 16pt;
 }
 
 #aside div{
     font-size: 16pt;
     display: flex;
     flex-flow: row;
-    text-align: center;
-    margin-top: 50px;
-    max-width: 400px;
-    max-height: 400px;
+    text-align: start;
 }
+
+#nsemelhante{
+    font-size: 12pt;
+    margin-top: 1%;
+    gap: 1%;
+}
+
+#psemelhante{
+    color: red;
+}
+
+
 
 #footer{
     background-color: #ECD931;
