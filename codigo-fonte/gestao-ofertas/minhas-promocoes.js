@@ -65,6 +65,9 @@ function atualizarItensNaPagina() {
                     <img src="${item.foto}" alt="Foto do Produto"> 
                 </div>
                 <p>${item.idSupermercado}</p>
+                <p>${item.nomeSupermercado}</p>
+                <p>Endereço: <br>${item.endereco}</p>
+                <p>Localização: Zona ${item.localizacao}</p>
                 <p>${item.nome} - ${item.marca}</p>
                 <p>Valor R$: ${item.preco}</p>
                 <p>Categoria: ${item.categoria}</p>

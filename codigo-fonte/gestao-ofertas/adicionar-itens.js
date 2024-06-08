@@ -1,5 +1,3 @@
-//const cadSupermercado = JSON.parse(localStorage.getItem('cadSupermercado')) || [];
-
 //destacar na barra de navegaçao o link atual da pag
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.linkMenu');
@@ -51,6 +49,15 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     // Recupera o login armazenado no localStorage
     const login = localStorage.getItem('login');
 
+      // Recupera o perfil do supermercado a partir do CNPJ (login)
+      const cadSupermercado = JSON.parse(localStorage.getItem('cadSupermercado')) || [];
+      const perfilSupermercado = cadSupermercado.find(supermercado => supermercado.cnpj === login);
+  
+      if (!perfilSupermercado) {
+          alert('Perfil do supermercado não encontrado.');
+          return;
+      }
+
     const foto = document.getElementById('foto').value;
     const nome = document.getElementById('nome').value;
     const marca = document.getElementById('marca').value;
@@ -69,9 +76,12 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
 
     const item = {
         idSupermercado: login, //o id do Supermercado é o cnpj digitado no login
-        id: itemId, 
+        id: itemId, //id unico para o item cadastrado
         foto: foto,
         nome: nome,
+        nomeSupermercado: perfilSupermercado.nomeSupermercado,
+        endereco: perfilSupermercado.endereco,
+        localizacao: perfilSupermercado.localizacao,
         marca: marca,
         preco: preco,
         categoria: categoria,
@@ -95,12 +105,3 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     inserirQtd.style.display = 'none';
     validadePromo.style.display = 'none';
 });
-
-// Função para retornar o nome do supermercado
-/*function infoSupermercados() {
-    return cadSupermercado.map(perfilSupermercado => perfilSupermercado.nomeSupermercado);
-}
-
-const nomeSupermercado = infoSupermercados()[0];
-nomeSupermercado: nomeSupermercado,
-*/
