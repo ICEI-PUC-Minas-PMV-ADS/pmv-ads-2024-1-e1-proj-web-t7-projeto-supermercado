@@ -1,3 +1,5 @@
+//const cadSupermercado = JSON.parse(localStorage.getItem('cadSupermercado')) || [];
+
 //destacar na barra de navegaçao o link atual da pag
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.linkMenu');
@@ -43,12 +45,13 @@ function geradorId() {
     return Date.now() + '-' + Math.floor(Math.random() * 1000);
 }
 
-// quando formulario for enviado, as informaçoes serao atribuidas a um objeto chamado "item" 
 document.getElementById('itemForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    //const foto = document.getElementById('foto').value;
-    const foto = document.getElementById('foto').value
+    // Recupera o login armazenado no localStorage
+    const login = localStorage.getItem('login');
+
+    const foto = document.getElementById('foto').value;
     const nome = document.getElementById('nome').value;
     const marca = document.getElementById('marca').value;
     const preco = document.getElementById('preco').value;
@@ -56,17 +59,17 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     const maiorIdadeSim = document.getElementById('maiorIdadeSim').checked;
     const limiteItensSim = document.getElementById('limiteItensSim').checked;
     const campoLimiteItem = document.getElementById('campo-limite-item').value;
-    const itemPromocao = document.getElementById('itemPromocao').checked;//checkbox
+    const itemPromocao = document.getElementById('itemPromocao').checked;
     const inicioPromo = document.getElementById('inicioPromo').value;
     const fimPromo = document.getElementById('fimPromo').value;
 
     // chama a funçao que Gera um ID único
     const itemId = geradorId();
 
-    //cria um objeto para o item
+
     const item = {
-        
-        id: itemId,
+        idSupermercado: login, //o id do Supermercado é o cnpj digitado no login
+        id: itemId, 
         foto: foto,
         nome: nome,
         marca: marca,
@@ -93,5 +96,11 @@ document.getElementById('itemForm').addEventListener('submit', function(event) {
     validadePromo.style.display = 'none';
 });
 
+// Função para retornar o nome do supermercado
+/*function infoSupermercados() {
+    return cadSupermercado.map(perfilSupermercado => perfilSupermercado.nomeSupermercado);
+}
 
-
+const nomeSupermercado = infoSupermercados()[0];
+nomeSupermercado: nomeSupermercado,
+*/
