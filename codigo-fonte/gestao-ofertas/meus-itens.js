@@ -1,4 +1,6 @@
 // Obtendo os itens do localStorage
+const itens = JSON.parse(localStorage.getItem('itens')) || [];
+
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.linkMenu');
     const currentUrl = window.location.href.split('/').pop(); // Gets the current page file name
