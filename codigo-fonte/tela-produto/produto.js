@@ -1,5 +1,3 @@
-var list = JSON.parse(localStorage.getItem('lista de compras')) || [];
-
 const itens = JSON.parse(localStorage.getItem('itens')) || []
 
 //mostra os detalhes do produto
@@ -7,7 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const itemsurl = new URLSearchParams(window.location.search);
     const foto = itemsurl.get('foto');
     const nome = itemsurl.get('nome');
-    const preco = itemsurl.get('preco')
+    const preco = itemsurl.get('preco');
+    const marca = itemsurl.get('marca');
+    const maioridade = itemsurl.get('maioridade');
 
     const main =document.getElementById('main');
 

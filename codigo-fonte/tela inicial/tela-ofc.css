@@ -25,10 +25,6 @@ body{
     padding: 10px;
 }
 
-.conteiner a{
-    color: black;
-}
-
 #topo{
     background-color: #ECD931;
     grid-area: topo;
@@ -52,11 +48,9 @@ body{
     margin-left: 20%;
     text-align: center;
     justify-items: center;
-}
-
-#bloco1 .element{
     background-color: transparent;
 }
+
 
 
 #bloco2{
@@ -74,7 +68,9 @@ body{
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
+
 
 #barra{
     grid-area: barra;
@@ -99,16 +95,14 @@ body{
 #barra .titulos{
     position: absolute;
     display: flex;
-    flex-wrap: wrap;
     flex-flow: row;
     display: grid;
     grid-template-areas: 'bebidas açougue padaria higiene';
     column-gap: 5%;
     font-size: 20px;
     width:70%;
-    height: 0px;
     background-color: transparent;
-    left: 12%;
+    left: 14%;
     top: 93%;
 }
 
@@ -139,6 +133,7 @@ body{
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco4{
@@ -155,6 +150,7 @@ body{
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco5{
@@ -171,6 +167,7 @@ body{
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco6{
@@ -187,6 +184,7 @@ body{
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco7{
@@ -202,6 +200,7 @@ body{
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco8{
@@ -218,6 +217,7 @@ body{
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #busca{
@@ -343,16 +343,18 @@ body{
     align-items: center;
 }
 
-div p{
+.element p{
     text-align: start;
     font-style: uppercase;
     font-size: 16pt;
+    margin-top: 1%;
 }
 
 .preco{
+    font-size: 21pt !important;
     font-family: Merriweather;
-    font-size: 20pt;
-    text-align: center;
+    text-align: center !important;
+    color: red;
 }
 
 
