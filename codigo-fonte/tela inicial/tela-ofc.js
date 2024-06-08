@@ -31,6 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
 
+        //preco do produto
+        const preco1 = document.createElement('p')
+        preco1.innerHTML = `R$${data.preco}`
+        preco1.classList.add('preco')
+        elementDiv.appendChild(preco1)
+
         bloco1.appendChild(elementDiv);
 
         elementDiv.addEventListener('click', () => {
@@ -67,6 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const nome = document.createElement('p')
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
+
+        //preco do produto
+        const preco2 = document.createElement('p')
+        preco2.innerHTML = `R$${data.preco}`
+        preco2.classList.add('preco')
+        elementDiv.appendChild(preco2)
 
         bloco2.appendChild(elementDiv);
 
@@ -105,6 +117,11 @@ document.addEventListener('DOMContentLoaded', () => {
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
 
+        //preco do produto
+        const preco3 = document.createElement('p')
+        preco3.innerHTML = `R$${data.preco}`
+        elementDiv.appendChild(preco3)
+
         bloco2.appendChild(elementDiv);
 
         elementDiv.addEventListener('click', () => {
@@ -141,6 +158,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const nome = document.createElement('p')
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
+
+        //preco do produto
+        const preco4 = document.createElement('p')
+        preco4.innerHTML = `R$${data.preco}`
+        elementDiv.appendChild(preco4)
 
         bloco3.appendChild(elementDiv);
 
@@ -179,6 +201,11 @@ document.addEventListener('DOMContentLoaded', () => {
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
 
+        //preco do produto
+        const preco5 = document.createElement('p')
+        preco5.innerHTML = `R$${data.preco}`
+        elementDiv.appendChild(preco5)
+
         bloco4.appendChild(elementDiv);
 
         elementDiv.addEventListener('click', () => {
@@ -215,6 +242,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const nome = document.createElement('p')
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
+
+        //preco do produto
+        const preco6 = document.createElement('p')
+        preco6.innerHTML = `R$${data.preco}`
+        elementDiv.appendChild(preco6)
 
         bloco5.appendChild(elementDiv);
 
@@ -253,6 +285,11 @@ document.addEventListener('DOMContentLoaded', () => {
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
 
+        //preco do produto
+        const preco7 = document.createElement('p')
+        preco7.innerHTML = `R$${data.preco}`
+        elementDiv.appendChild(preco7)
+
         bloco6.appendChild(elementDiv);
 
         elementDiv.addEventListener('click', () => {
@@ -290,6 +327,11 @@ document.addEventListener('DOMContentLoaded', () => {
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
 
+        //preco do produto
+        const preco8 = document.createElement('p')
+        preco8.innerHTML = `R$${data.preco}`
+        elementDiv.appendChild(preco8)
+
         bloco7.appendChild(elementDiv);
 
         elementDiv.addEventListener('click', () => {
@@ -326,6 +368,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const nome = document.createElement('p')
         nome.textContent = data.nome
         elementDiv.appendChild(nome)
+
+        //preco do produto
+        const preco9 = document.createElement('p')
+        preco9.innerHTML = `R$${data.preco}`
+        elementDiv.appendChild(preco9)
 
         bloco8.appendChild(elementDiv);
 

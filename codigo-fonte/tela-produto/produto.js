@@ -4,12 +4,31 @@ const itens = JSON.parse(localStorage.getItem('itens')) || []
 
 //mostra os detalhes do produto
 document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const foto = urlParams.get('foto');
-    const nome = urlParams.get('nome');
+    const itemsurl = new URLSearchParams(window.location.search);
+    const foto = itemsurl.get('foto');
+    const nome = itemsurl.get('nome');
+    const preco = itemsurl.get('preco')
 
-    document.getElementById('elementTitle').textContent = foto;
-    document.getElementById('elementDetails').textContent = nome;
+    const main =document.getElementById('main');
+
+    //mostra a foto do produto
+    const img = document.createElement('img')
+    img.src = foto
+    img.alt = nome
+    main.appendChild(img)
+     
+    //mostra o nome do produto
+    const mostranome = document.createElement('p')
+    mostranome.textContent = nome
+    mostranome.classList.add('nomeproduto')
+    main.appendChild(mostranome)
+
+    //mostra o preço do produto
+    const mostrapreco = document.createElement('p')
+    mostrapreco.innerHTML = `R$${preco}`
+    mostrapreco.classList.add('preco')
+    main.appendChild(mostrapreco)
+
 });
 
 
@@ -46,6 +65,3 @@ if(itens.length > 0){
 }else{
     bloco.innerHTML = '<p>lista vazia</p>'
 }
-
-//mostra o produto na tela
-const mostraItem = document.getElementById('main')

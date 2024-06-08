@@ -29,11 +29,31 @@ body{
 }
 
 #main{
+    display: flex;
+    flex-flow:row ;
     background-color: #ffffff;
     grid-area: main;
     height: 100%;
     margin-left: 2%;
     border-radius: 10px;
+}
+
+main img{
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.preco{
+    color: red;
+    font-size: 50pt;
+    margin-top: 50vh;
+    margin-right: 30vh;
+    text-align: center;
+}
+
+.nomeproduto{
+    font-size: 40pt;
 }
 
 #section{
@@ -65,6 +85,11 @@ body{
     grid-area: aside;
 }
 
+#aside img{
+    max-width: 200px;
+    max-height: 150px;
+}
+
 #texto{
     position: absolute;
     top: 46%;
@@ -72,13 +97,11 @@ body{
     font-size: 19px;
 }
 
-#aside a{
-    color: black;
-}
-
 #aside div{
+    font-size: 16pt;
     display: flex;
     flex-flow: row;
+    text-align: center;
     margin-top: 50px;
     max-width: 400px;
     max-height: 400px;
