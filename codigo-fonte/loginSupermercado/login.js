@@ -12,8 +12,10 @@ function validarLogin() {
 
     // Verifica cada perfil salvo no localStorage
     for (const perfil of cadSupermercado) {
-        if (perfil.email === login && perfil.senha === senha) {
+        if (perfil.cnpj === login && perfil.senha === senha) {
             loginCorreto = true;
+            // Armazena o login no localStorage
+            localStorage.setItem('login', login);
             break;
         }
     }

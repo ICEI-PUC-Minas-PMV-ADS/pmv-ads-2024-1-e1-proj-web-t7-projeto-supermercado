@@ -51,14 +51,20 @@ function excluirItem(id) {
 
 // Função para atualizar a exibição dos itens na página
 function atualizarItensNaPagina() {
+    const login = localStorage.getItem('login');
+    const itens = JSON.parse(localStorage.getItem('itens')) || [];
+    const itensList = document.getElementById('itensList');
+
     itensList.innerHTML = ''; // Limpa a lista de itens na página
+
     itens.forEach(item => {
-        if (item.itemPromocaoSim) { //os itens só serão exibidos na página se o item não for marcado como promoção
+        if (item.idSupermercado === login && item.itemPromocaoSim) {
             const itemDiv = document.createElement('div');
             itemDiv.innerHTML = `
                 <div class="item-imagem">
                     <img src="${item.foto}" alt="Foto do Produto"> 
                 </div>
+                <p>${item.idSupermercado}</p>
                 <p>${item.nome} - ${item.marca}</p>
                 <p>Valor R$: ${item.preco}</p>
                 <p>Categoria: ${item.categoria}</p>

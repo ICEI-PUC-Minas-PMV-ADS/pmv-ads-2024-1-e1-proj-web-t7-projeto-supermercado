@@ -1,5 +1,5 @@
 // Obtendo os itens do localStorage
-const itens = JSON.parse(localStorage.getItem('itens')) || [];
+//const itens = JSON.parse(localStorage.getItem('itens')) || [];
 
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.linkMenu');
@@ -50,14 +50,20 @@ function excluirItem(id) {
 
 // Função para atualizar a exibição dos itens na página
 function atualizarItensNaPagina() {
+    const login = localStorage.getItem('login');
+    const itens = JSON.parse(localStorage.getItem('itens')) || [];
+    const itensList = document.getElementById('itensList');
+
     itensList.innerHTML = ''; // Limpa a lista de itens na página
+
     itens.forEach(item => {
-        if (item.itemPromocaoSim == false) { //os itens só serão exibidos na página se o item não for marcado como promoção
+        if (item.idSupermercado === login && item.itemPromocaoSim === false) {
             const itemDiv = document.createElement('div');
             itemDiv.innerHTML = `
                 <div class="item-imagem">
                     <img src="${item.foto}" alt="Foto do Produto"> 
                 </div>
+                <p>${item.idSupermercado}</p>
                 <p>${item.nome} - ${item.marca}</p>
                 <p>Valor R$: ${item.preco}</p>
                 <p>Categoria: ${item.categoria}</p>
@@ -70,6 +76,29 @@ function atualizarItensNaPagina() {
         }
     });
 }
+// Função para atualizar a exibição dos itens na página
+/*function atualizarItensNaPagina() {
+    itensList.innerHTML = ''; // Limpa a lista de itens na página
+    itens.forEach(item => {
+        if (item.itemPromocaoSim == false) { //os itens só serão exibidos na página se o item não for marcado como promoção
+            const itemDiv = document.createElement('div');
+            itemDiv.innerHTML = `
+                <div class="item-imagem">
+                    <img src="${item.foto}" alt="Foto do Produto"> 
+                </div>
+                <p>${item.idSupermercado}</p>
+                <p>${item.nome} - ${item.marca}</p>
+                <p>Valor R$: ${item.preco}</p>
+                <p>Categoria: ${item.categoria}</p>
+                ${itemMaiorIdade(item)}
+                ${limiteItem(item)}
+                ${dataPromo(item)}
+                <button onclick="excluirItem('${item.id}')">Excluir</button>
+            `;
+            itensList.appendChild(itemDiv);
+        }
+    });
+}*/
 
 // Exibindo os itens na página inicialmente
 const itensList = document.getElementById('itensList');
