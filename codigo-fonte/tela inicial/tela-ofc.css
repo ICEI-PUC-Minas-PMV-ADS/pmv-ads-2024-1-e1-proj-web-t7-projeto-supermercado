@@ -5,6 +5,27 @@ body{
     font-family: normal 15pt sans-serif;
 }
 
+.slogan-cabecalho {
+    display: flex;
+    font-family:'Poetsen One';
+    font-size: 25px;
+    justify-content: center;
+}
+
+.slogan-cabecalho p {
+    margin-top: 45px;
+}
+
+.img-desconto {
+    margin-top: 25px; 
+}
+
+.barra-navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
 .conteiner{
     display: grid;
     display: flex;
