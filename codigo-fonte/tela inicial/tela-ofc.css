@@ -29,13 +29,51 @@ body{
     color: black;
 }
 
+.slogan-cabecalho {
+    display: flex;
+    font-family:'Poetsen One';
+    font-size: 25px;
+    justify-content: center;
+}
+
+.slogan-cabecalho p {
+    margin-top: 45px;
+}
+
+.img-desconto {
+    margin-top: 25px; 
+}
+
+
 #topo{
     background-color: #ECD931;
     grid-area: topo;
-    height: 15vh;
+    height: 20vh;
     border: 0px;
     width: 100%;
 
+}
+
+#barraNavegar  {
+    display: flex;
+    justify-content: center;}
+
+.containerFiltro {
+    display: flex;
+    margin: 10px;
+}
+
+form {
+    padding: 10px;
+}
+
+label {
+    font-family: 'Open Sans', sans-serif;
+
+font-size: 14px;}
+
+button {
+    font-size: 12px;
 }
 
 #bloco1{
@@ -220,14 +258,6 @@ body{
     justify-items: center;
 }
 
-#busca{
-    border: 0px;
-    position: absolute;
-    left: 30%;
-    bottom: 90%;
-    width: 60vh;
-    height: 5vh;
-}
 
 #resultado{
     position: absolute;
@@ -238,41 +268,24 @@ body{
     margin-top: 5%;
 }
 
-#carrinho{
-    position:absolute;
-    left: 24%;
-    top: 2%;
-    transform: rotate(-20deg); 
-}
 
 #notificaçoes{
     position: absolute;
     color: black;
-    font-size: 20px;
-    right: 15%;
-    top: 14%;
+    font-size: 18px;
+    right: 2%;
+    top: 15%;
+    
 }
 
 #listacompras{
     position: absolute;
     color: black;
-    font-size: 20px;
-    top: 14%;
-    right: 45%;
+    font-size: 18px;
+    top: 15%;
+    right: 12%;
 }
 
-#filtros{
-    position: absolute;
-    display: inline;
-    color: black;
-    font-size: 20px;
-    top: 14%;
-    left: 15%;
-    border: 0px;
-    background-color: #ECD931;
-    text-decoration: underline;
-    width: 100px;
-}
 
 #ItensFiltro{
     position: absolute;

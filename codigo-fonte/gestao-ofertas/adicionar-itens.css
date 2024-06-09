@@ -81,59 +81,59 @@ form {
     "categoria preco";
     }
 
-    .upload-imagem {
-        grid-area: upload-imagem;
-    }
+.upload-imagem {
+    grid-area: upload-imagem;
+}
+
+.nome-item {
+    grid-area: nome-item;
+}
+
+.marca {
+    grid-area: marca;
+}
+
+.categoria {
+    grid-area: categoria;
+}
+
+.preco {
+    grid-area: preco;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
     
-    .nome-item {
-        grid-area: nome-item;
-    }
-    
-    .marca {
-        grid-area: marca;
-    }
-    
-    .categoria {
-        grid-area: categoria;
-    }
-    
-    .preco {
-        grid-area: preco;
-    }
+}
 
-    .form-flex {
-        display: flex;
-        flex-direction: column;
-        
-    }
+.formulario {
+    padding:  10px;
+    font-size: 14px;
+    border-radius: 10px;
+}
 
-    .formulario {
-        padding:  10px;
-        font-size: 14px;
-        border-radius: 10px;
-    }
+.qtd-permitida {
+    display: none;
+}
 
-    .qtd-permitida {
-        display: none;
-    }
+.validadePromo {
+    display: none;
+}
+.validadePromo input {
+    margin-bottom: 10px;
+}
 
-    .validadePromo {
-        display: none;
-    }
-    .validadePromo input {
-        margin-bottom: 10px;
-    }
+.validadePromo label {
+    display: block;
 
-    .validadePromo label {
-        display: block;
-    
-    }
+}
 
-    input{
-        border-radius: 3px;
-        border: 1px solid #000;
-    }
+input{
+    border-radius: 3px;
+    border: 1px solid #000;
+}
 
-    .enviar {
-        margin: 9px;
-    }
+.enviar {
+    margin: 9px;
+}
