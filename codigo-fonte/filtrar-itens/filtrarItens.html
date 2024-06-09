@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-compatible" content="ie=edge">
+    <link rel="stylesheet" href="filtrarItens.css">
+    <title>Filtrar</title>
+</head>
+<body>
+    <!--inicio filtro de pesquisa-->
+    <div class="containerFiltro">
+        <form id="filtroForm">
+            <label for="filtro">Pesquisar por:</label>
+            <input type="text" id="filtro" name="filtro" placeholder="Digite a categoria, nome do supermercado ou nome do item">
+            <button type="submit">Buscar</button><br><br>
+        </form>
+
+        <form id="regiaoForm">
+            <label for="localizacao">Localização:</label>
+            <select id="localizacao" name="localizacao">
+                <option value="">Selecione uma região</option>
+                <option value="Norte">Norte</option>
+                <option value="Sul">Sul</option>
+                <option value="Leste">Leste</option>
+                <option value="Oeste">Oeste</option>
+                <option value="Noroeste">Noroeste</option>
+                <option value="Nordeste">Nordeste</option>
+                <option value="Região Metropolitana">Região Metropolitana</option>
+            </select>
+            <input type="checkbox" id="menorPreco">
+            <label for="menorPreco">Mais Barato</label>
+            <button type="submit">Aplicar filtro</button><br><br>
+        </form>
+    </div> 
+    <!--fim do filtro de pesquisa-->
+
+    <div id="resultFiltro">
+        <!-- Resultados filtrados serão exibidos aqui -->
+    </div>
+    <script src="filtrarItens.js"></script>
+</body>
+</html>

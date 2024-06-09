@@ -25,34 +25,39 @@
             <a id="listacompras" href="../lista-supermercado/lista__compras.html" target="_blank"><strong>Lista de Compras</strong></a>
         </div>   
     </div>
-        <!--inicio filtro de pesquisa-->
-        <div class="containerFiltro" id="filtro">
-            <form id="filtroForm">
-                <label for="filtro">Pesquisar por:</label>
-                <input type="text" id="filtro" name="filtro" placeholder="Digite a categoria, nome do supermercado ou nome do item">
-                <button type="submit">Buscar</button><br><br>
-            </form>
+    <!--inicio filtro de pesquisa-->
+    <div class="containerFiltro">
+        <form id="filtroForm">
+            <label for="filtro">Pesquisar por:</label>
+            <input type="text" id="filtro" name="filtro" placeholder="Digite a categoria, nome do supermercado ou nome do item">
+            <button type="submit" class="ver-produto-botao" style="width: auto;">Buscar</button><br><br>
+        </form>
 
-            <form id="regiaoForm">
-                <label for="localizacao">Localização:</label>
-                <select id="localizacao" name="localizacao">
-                    <option value="">Selecione uma região</option>
-                    <option value="Norte">Norte</option>
-                    <option value="Sul">Sul</option>
-                    <option value="Leste">Leste</option>
-                    <option value="Oeste">Oeste</option>
-                    <option value="Noroeste">Noroeste</option>
-                    <option value="Nordeste">Nordeste</option>
-                    <option value="Região Metropolitana">Região Metropolitana</option>
-                </select>
-                <input type="checkbox" id="menorPreco">
-                <label for="menorPreco">Mais Barato</label>
-                <button type="submit">Aplicar filtro</button><br><br>
-            </form>
-        </div> <!--fim do filtro de pesquisa-->
+        <form id="regiaoForm">
+            <label for="localizacao">Localização:</label>
+            <select id="localizacao" name="localizacao">
+                <option value="">Selecione uma região</option>
+                <option value="Norte">Norte</option>
+                <option value="Sul">Sul</option>
+                <option value="Leste">Leste</option>
+                <option value="Oeste">Oeste</option>
+                <option value="Noroeste">Noroeste</option>
+                <option value="Nordeste">Nordeste</option>
+                <option value="Região Metropolitana">Região Metropolitana</option>
+            </select>
+            <input type="checkbox" id="menorPreco">
+            <label for="menorPreco">Mais Barato</label>
+            <button type="submit" class="ver-produto-botao" style="width: auto;">Aplicar filtro</button><br><br>
+        </form>
+    </div> 
+    <!--fim do filtro de pesquisa-->
+
+    <div id="resultFiltro">
+        <!-- Resultados filtrados serão exibidos aqui -->
+    </div>
     
 
-    <div class="conteiner" id="container">
+        <div class="conteiner" id="container" style="display: none;">
 
         <div id="bloco1"></div>
         <p id="Ofertas"></p>
@@ -79,7 +84,6 @@
         <div id="bloco7"></div>
         <div id="bloco8"></div>
 
-  </div> 
     <footer id="rodape">
         <p>&copy; 2024 - Todos os direitos reservados</p>
     </footer>

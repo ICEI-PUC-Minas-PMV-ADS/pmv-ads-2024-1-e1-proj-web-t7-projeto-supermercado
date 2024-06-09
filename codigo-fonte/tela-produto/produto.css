@@ -29,8 +29,6 @@ body{
 }
 
 #main{
-    display: flex;
-    flex-flow:row ;
     background-color: #ffffff;
     grid-area: main;
     height: 100%;
@@ -168,10 +166,20 @@ header a{
     #listacompras{left: 32%;width: 40%;float: center;}
     #notificacoes{right: 5%;}
     #header{grid-area: header;}
-    #main{grid-area: main;margin: 2%;height: 60vh;}
+    #main{grid-area: main;margin: 2%;min-height: 60vh;}
     #section{grid-area: section;margin: 0 auto;}
     #aside{grid-area: aside;margin-left: 2%}
     #aside p{position: absolute;left: 4%;top: 105%;}
     #footer{grid-area: footer;}
 
 }
+
+.item-imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.item-container {
+    padding: 15px;
+}
+

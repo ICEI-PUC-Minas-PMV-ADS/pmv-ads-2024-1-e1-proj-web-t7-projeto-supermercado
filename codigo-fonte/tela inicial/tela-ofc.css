@@ -76,6 +76,52 @@ button {
     font-size: 12px;
 }
 
+#resultFiltro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#resultFiltro > div{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: left;
+    border: 1px solid #ECD931;
+
+
+}
+
+.item-imagem {
+    text-align: center;
+}
+
+.item-imagem img {
+    width: 260px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+
+.containerFiltro {
+    display: flex;
+    margin: 10px;
+}
+
+form {
+    padding: 10px;
+}
+
+label {
+font-size: 14px;}
+
+button {
+    font-size: 12px;
+}
+
 #bloco1{
     display: inline;
     grid-area: bloco1;
@@ -117,7 +163,6 @@ button {
 #barra{
     grid-area: barra;
     width: 100%;
-    height: 30vh;
 }
 
 #barra .categoria {
@@ -347,7 +392,9 @@ button {
     position: relative;
     background-color: #ECD931;
     border: 0px;
-    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .conteiner img{
@@ -394,4 +441,21 @@ div p{
     #barra .categoria{margin-left: 10%;border: 0%;row-gap: 2px;position: absolute;top: 115%;margin-top: 0%;}
     #barra .categoria img:hover{transform: scale(0.75,0.75);}
     #barra .titulos{display: none;}
+}
+
+.ver-produto-botao {
+    background-color: #ECD931;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    border: 1px solid #b9b9b9;
+    border-radius: 4px;
+    padding: 10px;
 }

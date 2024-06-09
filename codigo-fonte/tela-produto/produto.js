@@ -2,33 +2,60 @@ var list = JSON.parse(localStorage.getItem('lista de compras')) || [];
 
 const itens = JSON.parse(localStorage.getItem('itens')) || []
 
+// função para verificar item para maior 18 anos
+function itemMaiorIdade(item) {
+    if (item.maiorIdadeSim) {
+        return '<p>Para maiores de 18 anos</p>';
+    } else {
+        return '';
+    }
+}
+
+function limiteItem(item) {
+    if (item.campoLimiteItem != null) {
+        return `<p> <strong>limite de itens por pessoa:</strong> ${item.campoLimiteItem}<p>`;
+    } else {
+        return '';
+    }
+}
+
+function dataPromo(item) {
+    if (item.inicioPromo && item.fimPromo) {
+        return `<strong><p> item em promoção:</strong>
+        De ${item.inicioPromo} a ${item.fimPromo}</p>`;
+    } else {
+        return '';
+    }
+}
+
+
 //mostra os detalhes do produto
 document.addEventListener('DOMContentLoaded', () => {
-    const itemsurl = new URLSearchParams(window.location.search);
-    const foto = itemsurl.get('foto');
-    const nome = itemsurl.get('nome');
-    const preco = itemsurl.get('preco')
+    const produto = JSON.parse(localStorage.getItem('produto'))
+    console.log(produto)
 
-    const main =document.getElementById('main');
+    const main = document.getElementById('main');
 
-    //mostra a foto do produto
-    const img = document.createElement('img')
-    img.src = foto
-    img.alt = nome
-    main.appendChild(img)
-     
-    //mostra o nome do produto
-    const mostranome = document.createElement('p')
-    mostranome.textContent = nome
-    mostranome.classList.add('nomeproduto')
-    main.appendChild(mostranome)
 
-    //mostra o preço do produto
-    const mostrapreco = document.createElement('p')
-    mostrapreco.innerHTML = `R$${preco}`
-    mostrapreco.classList.add('preco')
-    main.appendChild(mostrapreco)
-
+    const itemDiv = document.createElement('div');
+    itemDiv.innerHTML = `
+        <div class="item-imagem">
+            <img src="${produto.foto}" alt="Foto do Produto">
+        </div>
+        <div class="item-container">
+            <p>${produto.nome} - ${produto.marca}</p>
+            <p>R$ ${produto.preco}</p>
+            <p><strong>Categoria: ${produto.categoria}</p>
+            <br>
+            ${itemMaiorIdade(produto)}
+            ${limiteItem(produto)}
+            ${dataPromo(produto)}
+            <p><strong>Estabelecimento:</strong> ${produto.nomeSupermercado}</p>
+            <p><strong>Endereço:</strong><br>${produto.endereco}</p>
+            <p><strong>Localização:</strong> Zona ${produto.localizacao}</p>
+        </div>
+    `;
+    main.appendChild(itemDiv)
 });
 
 

@@ -1,3 +1,103 @@
+// Variável global para armazenar a localização selecionada
+let localizacaoSelecionada = '';
+let resultadosFiltrados = []
+
+// Evento para selecionar a localização e aplicar filtro
+document.getElementById('regiaoForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    //document.querySelector('.conteiner').style.display = 'none';
+    localizacaoSelecionada = document.getElementById('localizacao').value.trim().toLowerCase();
+    filtrarItens();
+});
+
+// Evento para o formulário de busca por texto e aplicar filtro
+document.getElementById('filtroForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+   // document.querySelector('.conteiner').style.display = 'none';
+    filtrarItens();
+});
+
+// Função de filtragem
+function filtrarItens() {
+    // Obtém o valor digitado no campo de filtro e converte para minúsculas
+    const filtro = document.getElementById('filtro').value.trim().toLowerCase();
+    const menorPreco = document.getElementById('menorPreco').checked;
+    console.log('Filtro:', filtro); // Log para debug
+    
+    // Carrega os itens armazenados no localStorage, ou inicializa com um array vazio se não houver itens
+    const itens = JSON.parse(localStorage.getItem('itens')) || [];
+    console.log('Itens:', itens); // Log para debug
+    
+    // Filtra os itens com base no valor digitado (categoria, nome do supermercado ou nome do item)
+    const resultadosFiltrados = itens.filter(item => {
+        const filtroTexto = 
+            (item.categoria && item.categoria.toLowerCase().includes(filtro)) ||
+            (item.nomeSupermercado && item.nomeSupermercado.toLowerCase().includes(filtro)) ||
+            (item.nome && item.nome.toLowerCase().includes(filtro));
+        
+        const filtroLocalizacao = !localizacaoSelecionada || 
+            (item.localizacao && item.localizacao.toLowerCase() === localizacaoSelecionada);
+
+        return filtroTexto && filtroLocalizacao;
+    });
+    console.log('Resultados Filtrados:', resultadosFiltrados); // Log para debug
+    this.resultadosFiltrados = resultadosFiltrados
+
+    // Ordena os itens filtrados por preço se a checkbox "Mais Barato" estiver marcada
+    if (menorPreco) {
+        resultadosFiltrados.sort((a, b) => parseFloat(a.preco) - parseFloat(b.preco));
+    }
+
+    // Chama a função para exibir os itens filtrados na página
+    exibirItens(resultadosFiltrados);
+}
+
+// Função para exibir os itens filtrados na página
+function exibirItens(itens) {
+    // Obtém a div onde os resultados serão exibidos
+    const resultFiltro = document.getElementById('resultFiltro');
+    // Limpa o conteúdo da div
+    resultFiltro.innerHTML = ''; 
+
+    // Verifica se não há itens filtrados
+    if (itens.length === 0) {
+        // Exibe uma mensagem informando que nenhum item foi encontrado
+        resultFiltro.innerHTML = '<p>Nenhum item encontrado.</p>';
+        return;
+    }
+
+    // Percorre os itens filtrados e cria elementos div para exibi-los
+    itens.forEach(item => {
+        const itemDiv = document.createElement('div');
+        itemDiv.innerHTML = `
+            <div class="item-imagem">
+                <img src="${item.foto}" alt="Foto do Produto">
+            </div>
+            <p>${item.nome} - ${item.marca}</p>
+            <p>R$${item.preco}</p>
+            <button class="ver-produto-botao" onclick="verProduto('${item.id}')">Ver produto</button>
+        `;
+        // Adiciona cada item à div de resultados
+        resultFiltro.appendChild(itemDiv);
+    });
+}
+
+function verProduto(id) {
+    console.log(id)
+    const item = this.resultadosFiltrados.find((item) => item.id === id)
+    console.log(item)
+    localStorage.setItem('produto', JSON.stringify(item))
+    window.location.pathname = 'codigo-fonte/tela-produto/produto.html'
+
+}
+
+filtrarItens();
+
+
+
+
+
+
 
 // Obtendo os itens do localStorage
 const itens = JSON.parse(localStorage.getItem('itens')) || [];

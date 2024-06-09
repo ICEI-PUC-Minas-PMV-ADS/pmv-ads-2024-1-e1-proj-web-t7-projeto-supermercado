@@ -71,3 +71,9 @@ img {
     flex-direction: column;
     justify-content: center;
 }
+
+.titulo a {
+    text-decoration: none;
+    color: #ECD931;
+
+}
