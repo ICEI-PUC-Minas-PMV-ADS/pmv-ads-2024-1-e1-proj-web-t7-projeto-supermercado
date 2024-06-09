@@ -25,26 +25,6 @@ body{
     padding: 10px;
 }
 
-.conteiner a{
-    color: black;
-}
-
-.slogan-cabecalho {
-    display: flex;
-    font-family:'Poetsen One';
-    font-size: 25px;
-    justify-content: center;
-}
-
-.slogan-cabecalho p {
-    margin-top: 45px;
-}
-
-.img-desconto {
-    margin-top: 25px; 
-}
-
-
 #topo{
     background-color: #ECD931;
     grid-area: topo;
@@ -136,11 +116,9 @@ button {
     margin-left: 20%;
     text-align: center;
     justify-items: center;
-}
-
-#bloco1 .element{
     background-color: transparent;
 }
+
 
 
 #bloco2{
@@ -158,7 +136,9 @@ button {
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
+
 
 #barra{
     grid-area: barra;
@@ -182,16 +162,14 @@ button {
 #barra .titulos{
     position: absolute;
     display: flex;
-    flex-wrap: wrap;
     flex-flow: row;
     display: grid;
     grid-template-areas: 'bebidas açougue padaria higiene';
     column-gap: 5%;
     font-size: 20px;
     width:70%;
-    height: 0px;
     background-color: transparent;
-    left: 12%;
+    left: 14%;
     top: 93%;
 }
 
@@ -222,6 +200,7 @@ button {
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco4{
@@ -238,6 +217,7 @@ button {
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco5{
@@ -254,6 +234,7 @@ button {
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco6{
@@ -270,6 +251,7 @@ button {
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco7{
@@ -285,6 +267,7 @@ button {
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 #bloco8{
@@ -301,6 +284,7 @@ button {
     margin-left: 20%;
     text-align: center;
     justify-items: center;
+    background-color: transparent;
 }
 
 
@@ -403,16 +387,18 @@ button {
     align-items: center;
 }
 
-div p{
+.element p{
     text-align: start;
-    font-style: uppercase;
     font-size: 16pt;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .preco{
+    font-size: 21pt !important;
     font-family: Merriweather;
-    font-size: 20pt;
-    text-align: center;
+    text-align: center !important;
+    color: red;
 }
 
 
