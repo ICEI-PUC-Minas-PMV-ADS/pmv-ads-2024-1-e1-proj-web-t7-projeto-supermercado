@@ -4,13 +4,13 @@
 
 Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
+|Caso de Teste    | CT-01 - adicinar item |
 |:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Requisitos Associados | RF-10 |
+| Objetivo do Teste | Cadastrar um item do supermercado |
+| Passos | 1. preencha os campos do formulario, 2. clique em enviar |
+| Critérios de êxito | item deverá ser exibido na tela "meus itens" ou "promoções"  |
+| Responsável pela elaborar do caso de Teste | Patrick brreno |
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
