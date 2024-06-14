@@ -58,10 +58,10 @@ ul {
 /*cabeçalho fim*/ 
 
 section {
-    width: 50%;
+    width: 40%;
     margin: 30px auto;
-    background-color: #ECD931
-
+    background-color: #ECD931;
+    border-radius: 15px;
 }
 
 section h1 {
@@ -130,7 +130,7 @@ form {
 }
 
 input{
-    border-radius: 3px;
+    border-radius: 10px;
     border: 1px solid #000;
 }
 

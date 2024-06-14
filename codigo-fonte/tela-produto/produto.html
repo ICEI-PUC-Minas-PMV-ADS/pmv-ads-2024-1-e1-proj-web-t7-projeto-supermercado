@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imgs/carrinho.png" type="image/x-icon">
     <link rel="stylesheet" href="produto.css">
     <script  defer src="produto.js"></script>
@@ -10,19 +11,27 @@
 </head>
 <body>
     <div class="conteiner">
-        <header id="header">
-            <img src="imgs/carrinho.png" alt="carrinho mercado" id="carrinho">
-            <a href="../lista-supermercado/lista__compras.html" id="listacompras"><strong>Lista de Compras</strong></a>
-            <a href="../notificaçoes/notificacoes.html" id="notificacoes"><strong>Notificaçoes</strong></a>
-        </header> 
-        <main id="main"></main>
+        <div id="topo">
+            <!--<img id="carrinho" src="imgs/carrinho.png" alt="carrinho de compras">-->
+            <div class="slogan-cabecalho">
+                <img src="imagens/carrinho.png" alt="carrinho compras" width="75px">
+                <p>smartspend</p>
+                <img class="img-desconto" src="imagens/desconto.png" alt="desconto" width="35px" height="35">
+            </div>
+    
+            <div id="barraNavegar">
+                <a id="paginaInicial" href="../tela inicial/tela-ofc.html" ><strong>Página inicial</strong></a>
+                <a id="listacompras" href="../listaCompras/listaCompras.html" ><strong>Lista de Compras</strong></a>
+            </div>   
+        </div>
+            <main id="main"></main>
         <section id="section">
             <button onclick="addItem()" id="botao" >Adicionar a lista de compras</button>
         </section>
         <aside id="aside">
-            <p id="texto"><strong>Produtos semelhantes</strong></p>
+            <p id="texto"><strong>Outros Produtos</strong></p>
         </aside>
-        <footer id="footer">&copy todos os direitos reservados 2024</footer>
+        <footer id="footer">&copy  2024 - Todos os direitos reservados</footer>
 
     </div>
 </body>

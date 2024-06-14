@@ -1,7 +1,7 @@
 body{
     background-color: #e4dbdb;
     margin: 0%;
-    font:normal 18pt 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font:normal 15pt 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
@@ -17,10 +17,35 @@ body{
                          'footer footer'
 }
 
-#header{
-    height: 18vh;
+#topo{
     background-color: #ECD931;
+    border: 0px;
+    width: 100%;
+    height: 120px;
     grid-area: header;
+
+}
+
+.slogan-cabecalho {
+    display: flex;
+    font-family:'Poetsen One';
+    font-size: 25px;
+    justify-content: center;
+}
+
+.slogan-cabecalho p {
+    margin-top: 45px;
+}
+
+.img-desconto {
+    margin-top: 25px; 
+}
+
+#barraNavegar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
 }
 
 #main{
@@ -89,7 +114,7 @@ main img{
 }
 
 #texto{
-    margin-top: 1%;
+    margin: 10px;
     font-size: 16pt;
 }
 
@@ -114,8 +139,9 @@ main img{
 
 #footer{
     background-color: #ECD931;
-    height: 15vh;
     grid-area: footer;
+    text-align: center;
+    padding: 30px;
 }
 
 #busca{
@@ -140,16 +166,21 @@ header a{
     font-size: 20px;
 }
 
-#notificacoes{
+#paginaInicial{
     position: absolute;
-    right: 15%;
-    top: 14%;
+    color: black;
+    font-size: 18px;
+    right: 2%;
+    top: 15%;
+    
 }
 
 #listacompras{
     position: absolute;
-    right: 45%;
-    top: 14%;
+    color: black;
+    font-size: 18px;
+    top: 15%;
+    right: 12%;
 }
 
 #filtro{
@@ -159,6 +190,10 @@ header a{
     font-size: 20px;
     top: 14%;
     left: 15%;
+}
+
+.semelhantes {
+    margin: 10px;
 }
 
 @media screen and (max-width: 900px) {

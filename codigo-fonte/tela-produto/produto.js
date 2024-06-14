@@ -43,43 +43,52 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="item-container">
             <p>${produto.nome} - ${produto.marca}</p>
             <p>R$ ${produto.preco}</p>
-            <p><strong>Categoria: ${produto.categoria}</p>
-            <br>
+            <p><strong>Categoria: </strong>${produto.categoria}</p>
             ${itemMaiorIdade(produto)}
+            <br>
             ${limiteItem(produto)}
             ${dataPromo(produto)}
+            <br>
             <p><strong>Estabelecimento:</strong> ${produto.nomeSupermercado}</p>
             <p><strong>Endereço:</strong><br>${produto.endereco}</p>
             <p><strong>Localização:</strong> Zona ${produto.localizacao}</p>
         </div>
     `;
     main.appendChild(itemDiv)
+
+    
 });
 
 
 //add item a lista de compras
 function addItem(){
-    const itemsurl = new URLSearchParams(window.location.search);
+    /*const itemsurl = new URLSearchParams(window.location.search);
     const foto = itemsurl.get('foto');
     const nome = itemsurl.get('nome');
-    const preco = itemsurl.get('preco');
+    const preco = itemsurl.get('preco');*/
 
+    const produto = JSON.parse(localStorage.getItem('produto'));
+    let listaComp = JSON.parse(localStorage.getItem('listaComp')) || [];
+    listaComp.push(produto);
+    localStorage.setItem('listaComp', JSON.stringify(listaComp));
     
-        const botao = document.querySelector('#botao')
-        botao.innerHTML = 'Item Adicionado a sua Lista'
-        botao.style.backgroundColor = 'lightgreen'
+    const botao = document.querySelector('#botao')
+    botao.innerHTML = 'Item Adicionado a sua Lista'
+    botao.style.backgroundColor = 'lightgreen'
+
+        
     
-        const lista = {
-    
-            foto:foto,
-            nome:nome,
-            preco:preco
-            
-        };
-    
-        let listacompras = JSON.parse(localStorage.getItem('listacompras')) || [];
-        listacompras.push(lista);
-        localStorage.setItem('listacompras', JSON.stringify(listacompras));
+    /*const lista = {
+
+    foto:foto,
+    nome:nome,
+    preco:preco
+        
+    };
+
+    let listacompras = JSON.parse(localStorage.getItem('listacompras')) || [];
+    listacompras.push(lista);
+    localStorage.setItem('listacompras', JSON.stringify(listacompras));*/
     
     }
 

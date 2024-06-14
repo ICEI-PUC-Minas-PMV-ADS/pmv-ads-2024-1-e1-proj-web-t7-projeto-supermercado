@@ -2,7 +2,7 @@ body{
     background-color: #e4dbdb;
     padding: 0%;
     margin: 0%;
-    font-family: normal 15pt sans-serif;
+    font:normal 15pt 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .slogan-cabecalho {
@@ -20,12 +20,6 @@ body{
     margin-top: 25px; 
 }
 
-.barra-navegacao {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-
-}
 .conteiner{
     display: grid;
     display: flex;
@@ -394,18 +388,18 @@ button {
 }
 
 #rodape{
-    position: relative;
     background-color: #ECD931;
     border: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .conteiner img{
     max-width: 150px;
     max-height: 200px;
-    align-items: center;
+    align-items: start;
 }
 
 .element p{
