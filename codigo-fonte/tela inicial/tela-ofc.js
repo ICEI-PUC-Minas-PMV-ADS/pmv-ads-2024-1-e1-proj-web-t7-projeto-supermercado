@@ -71,6 +71,7 @@ function exibirItens(itens) {
         const itemDiv = document.createElement('div');
         itemDiv.innerHTML = `
             <div class="item-imagem">
+                <p>${item.nomeSupermercado}</p>
                 <img src="${item.foto}" alt="Foto do Produto">
             </div>
             <p>${item.nome} - ${item.marca}</p>

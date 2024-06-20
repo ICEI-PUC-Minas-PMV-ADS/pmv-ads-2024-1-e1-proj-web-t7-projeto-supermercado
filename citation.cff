@@ -1,0 +1,21 @@
+message: Please cite this software using these metadata.
+title: smart Spend
+authors:
+  - family-names: Breno de Souza
+    given-names: Patrick
+  - family-names: Alves Souza
+    given-names: Isac
+  - family-names: Domingos
+    given-names: Tobias
+  - family-names: Lucas Rios
+    given-names: Davi 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alberto Marques Pietrobon
+    given-names: Carlos
+keywords:
+  - Supermercado
+  - Economia
+repository-code: 
+version: 1.0.0
+date-released: 2024-06-23
