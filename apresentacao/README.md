@@ -1,5 +1,4 @@
 # Apresentação do Projeto
-apresentacao/teste2.mp4
 
 ## Conjunto de Slides
 
