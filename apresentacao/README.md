@@ -17,7 +17,10 @@ A apresentação do projeto consiste na geração de um conjunto de slides em um
 
 ## Vídeo de apresentação
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/blob/main/apresentacao/teste2%20(2).mp4
+
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/assets/141360060/bd97e23c-4ab2-4f8a-afd2-21cc58e2156a
 
 
 ## Hospedagem
