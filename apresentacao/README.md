@@ -1,7 +1,7 @@
 # Apresentação do Projeto
 
 ## Conjunto de Slides
-
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/blob/main/apresentacao/teste2%20(1)%20(1)%20(1).mp4
 A apresentação do projeto consiste na geração de um conjunto de slides em um arquivo no formato ppt, pptx ou pdf, contemplando os seguintes itens:
 
 > - Contexto (Problema, Público-alvo)
