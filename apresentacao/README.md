@@ -1,4 +1,5 @@
 # Apresentação do Projeto
+apresentacao/teste2.mp4
 
 ## Conjunto de Slides
 
@@ -8,7 +9,6 @@ A apresentação do projeto consiste na geração de um conjunto de slides em um
 > - Requisitos
 > - Solução Implementada (funcionalidades de software)
 > - Conclusão da elaboração do projeto (pontos positivos, desafios, aprendizado).
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t7-projeto-supermercado/blob/main/apresentacao/teste.mp4
 [Adicione pdf de apresentação.]
 
 > **Links Úteis**:
