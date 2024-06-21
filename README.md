@@ -15,13 +15,11 @@
 * Patrick Breno
 * Tobias Quintão
 * Isac Alves
-* Lorrayne Santos
-* Caroline Lourenço
 * Davi Lucas
 
 ## Orientador
 
-* Nome completo do professor
+* Carlos Alberto Marques Pietrobon
 
 # Documentação
 
