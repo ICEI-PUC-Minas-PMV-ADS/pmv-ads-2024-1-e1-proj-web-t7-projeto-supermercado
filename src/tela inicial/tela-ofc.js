@@ -88,7 +88,7 @@ function verProduto(id) {
     const item = this.resultadosFiltrados.find((item) => item.id === id)
     console.log(item)
     localStorage.setItem('produto', JSON.stringify(item))
-    window.location.pathname = 'codigo-fonte/tela-produto/produto.html'
+    window.location.pathname = 'src/tela-produto/produto.html'
 
 }
 
