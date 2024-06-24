@@ -72,7 +72,7 @@ Patrick breno
 
 #### Criar lista de compras
 
-<img src="img/lista de compras.png">
+<img src="img/listacompras.png">
 
 #### Requsito atendido
 

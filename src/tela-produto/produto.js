@@ -62,10 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //add item a lista de compras
 function addItem(){
-    /*const itemsurl = new URLSearchParams(window.location.search);
-    const foto = itemsurl.get('foto');
-    const nome = itemsurl.get('nome');
-    const preco = itemsurl.get('preco');*/
 
     const produto = JSON.parse(localStorage.getItem('produto'));
     let listaComp = JSON.parse(localStorage.getItem('listaComp')) || [];
@@ -76,20 +72,6 @@ function addItem(){
     botao.innerHTML = 'Item Adicionado a sua Lista'
     botao.style.backgroundColor = 'lightgreen'
 
-        
-    
-    /*const lista = {
-
-    foto:foto,
-    nome:nome,
-    preco:preco
-        
-    };
-
-    let listacompras = JSON.parse(localStorage.getItem('listacompras')) || [];
-    listacompras.push(lista);
-    localStorage.setItem('listacompras', JSON.stringify(listacompras));*/
-    
     }
 
 //itens semalhantes
