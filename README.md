@@ -42,7 +42,7 @@
 
 # Código-Fonte
 
-* <a href="codigo-fonte/README.md">Código Fonte</a>
+* <a href="src/README.md">Código Fonte</a>
 
 # Apresentação
 
