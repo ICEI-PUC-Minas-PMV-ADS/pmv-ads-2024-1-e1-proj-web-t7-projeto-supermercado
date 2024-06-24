@@ -12,7 +12,7 @@ document.getElementById('regiaoForm').addEventListener('submit', function(event)
 
 // Evento para o formulário de busca por texto e aplicar filtro
 document.getElementById('filtroForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); 
    // document.querySelector('.conteiner').style.display = 'none';
     filtrarItens();
 });

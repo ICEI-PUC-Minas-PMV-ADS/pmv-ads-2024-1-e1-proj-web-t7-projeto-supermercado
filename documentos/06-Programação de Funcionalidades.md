@@ -70,6 +70,28 @@ no menu direito superior, clique em "meus itens".
 Patrick breno
 
 
+#### Criar lista de compras
+
+<img src="img/lista de compras.png">
+
+#### Requsito atendido
+
+RF-05	A aplicação deve permitir que o usuário crie listas de compras
+
+#### Artefatos da funcionalidade
+
+produto.html,
+produto.css,
+produto.js,
+
+#### Instruçoes de acesso
+
+ao clicar no produto,clique no botao:adicionar item a lista de compras.
+
+#### Responsavel 
+
+Davi Lucas
+
 > **Links Úteis**:
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
 > - [JSON Tutorial](https://www.w3resource.com/JSON)
